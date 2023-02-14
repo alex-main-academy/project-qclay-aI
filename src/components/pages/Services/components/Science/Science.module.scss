@@ -1,0 +1,184 @@
+.science {
+    padding: 60px 0 87.5px;
+
+    @media screen and (max-width:767px) {
+        padding: 32.25px 0 61.35px;
+    }
+}
+
+// top part
+
+.science__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media screen and (max-width:1124px) {
+        flex-direction: column;
+    }
+}
+
+.science__title {
+    position: relative;
+
+    max-width: 782px;
+    font-size: 70px;
+    line-height: 0.81;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+    }
+}
+
+.science__title__icon {
+    position: absolute;
+    top: 126px;
+    left: 311px;
+
+    @media screen and (max-width:767px) {
+        position: static;
+        width: 51px;
+    }
+}
+
+.science__contact {
+    display: flex;
+
+    @media screen and (max-width:767px) {
+        margin-top: 54.75px;
+    }
+}
+
+.science__contact__link {
+    display: inline-block;
+    height: 74px;
+    width: 204.7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1.4px solid #FFFFFF;
+    border-radius: 56px;
+
+    font-family: 'Neue Machina';
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--white-text-color);
+
+    @media screen and (max-width:767px) {
+        width: 158.5px;
+        height: 57.25px;
+        font-size: 14px;
+    }
+}
+
+.science__contact__arrow {
+    width: 99.4px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    border-radius: 56px;
+
+    @media screen and (max-width:767px) {
+        width: 77px;
+        height: 57.25px;
+
+        svg {
+            width: 22.5px;
+        }
+    }
+}
+
+.science__border {
+    margin-top: 61px;
+    border-top: 3px dashed #6B6B6B;
+
+    @media screen and (max-width:767px) {
+        margin-top: 36.1px;
+        border-top: 2.6px dashed #6B6B6B;
+    }
+}
+
+.science__year {
+    font-family: 'Neue Machina';
+    font-size: 21px;
+    line-height: 0.95;
+    color: var(--gray-text-color);
+    margin-top: 26.5px;
+
+    @media screen and (max-width:767px) {
+        margin-top: 23px;
+        font-size: 14px;
+        line-height: 1;
+    }
+}
+
+// bottom part
+.science__bottom {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width:767px) {
+        margin-top: 81.6px;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 50.5px;
+    }
+}
+
+.science__circles {
+    @media screen and (max-width:767px) {
+        align-self: flex-start;
+        width: 243px;
+    }
+}
+
+.science__list {
+    display: flex;
+    gap: 11.7px;
+
+    @media screen and (max-width:767px) {
+        gap: 9px;
+    }
+}
+
+.science__item {
+    @media screen and (max-width:767px) {
+        height: 39.65px;
+    }
+}
+
+.science__link {
+    @media screen and (max-width:767px) {
+        height: 39.65px;
+    }
+}
+
+.science__icon {
+    @media screen and (max-width:767px) {
+        width: 39.65px;
+        height: 39.65px;
+    }
+}
+
+.science__text {
+    max-width: 325px;
+    margin-top: 26px;
+
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--white-text-color);
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        max-width: 186px;
+    }
+}

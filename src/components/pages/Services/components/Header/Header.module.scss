@@ -1,0 +1,48 @@
+.header {
+    padding-top: 32px;
+
+    @media screen and (max-width:767px) {
+        padding-top: 30px;
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Power Grotesk';
+    font-size: 29.7px;
+    line-height: 1.2;
+    color: var(--black-text-color);
+}
+
+.navigation {
+    display: flex;
+    gap: 70px;
+}
+
+.navigation__link {
+    font-family: 'Plus Jakarta Display';
+    font-size: 22px;
+    line-height: 1.27;
+    color: var(--black-text-color);
+}
+
+.header__quote {
+    padding: 26px 55px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+
+    font-family: 'Neue Machina';
+    font-size: 18px;
+    line-height: 0.95;
+    color: var(--black-text-color);
+    cursor: pointer;
+}

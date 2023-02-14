@@ -1,0 +1,26 @@
+.hero {
+    padding-bottom: 65px;
+    background-image: linear-gradient(to right, rgba(36, 188, 145, 0.6), rgba(36, 188, 145, 0.6)), url(../../images/hero/top-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width:767px) {
+        padding-bottom: 36px;
+        background-image: linear-gradient(to right, rgba(36, 188, 145, 0.6), rgba(36, 188, 145, 0.6)), url(../../images/hero/top-background-mobile.jpg);
+    }
+}
+
+.hero__text {
+    max-width: 228px;
+    font-family: 'Neue Machina';
+    font-size: 21px;
+    line-height: 1.27;
+    color: var(--black-text-color);
+    margin-top: 225px;
+
+    @media screen and (max-width:767px) {
+        max-width: 180px;
+        font-size: 16px;
+        margin-top: 311px;
+    }
+}
