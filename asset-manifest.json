@@ -1,13 +1,30 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.7acaea2f.css",
-    "main.js": "/project-qclay-aI/static/js/main.07d3183d.js",
+    "main.css": "/project-qclay-aI/static/css/main.22847763.css",
+    "main.js": "/project-qclay-aI/static/js/main.1ebecf1f.js",
+    "static/media/top-background.jpg": "/project-qclay-aI/static/media/top-background.de81524eecdc2e6b3436.jpg",
+    "static/media/Robtronika-Regular.ttf": "/project-qclay-aI/static/media/Robtronika-Regular.3a5bff6562eea11669e5.ttf",
+    "static/media/WhyteInktrap-Medium.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Medium.f23655ec1c93691ae10c.ttf",
+    "static/media/WhyteInktrap-Book.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Book.529e1472dfd485cfe3c7.ttf",
+    "static/media/PlusJakartaSans-Medium.ttf": "/project-qclay-aI/static/media/PlusJakartaSans-Medium.b1ea1e4a874b401f584a.ttf",
+    "static/media/PlusJakartaSans-Regular.ttf": "/project-qclay-aI/static/media/PlusJakartaSans-Regular.e959ca27c856c771bc26.ttf",
+    "static/media/top-background-mobile.jpg": "/project-qclay-aI/static/media/top-background-mobile.b804e8a0ddf6c97aa6c4.jpg",
+    "static/media/NeueMachina-Regular.ttf": "/project-qclay-aI/static/media/NeueMachina-Regular.3e80df68866b54fdec1d.ttf",
+    "static/media/NeueMachina-Ultrabold.ttf": "/project-qclay-aI/static/media/NeueMachina-Ultrabold.d1877796f7b16cfd54ba.ttf",
+    "static/media/PowerGrotesk-UltraBold.ttf": "/project-qclay-aI/static/media/PowerGrotesk-UltraBold.3487eaf6b13d36ed5678.ttf",
+    "static/media/PowerGrotesk-Regular.ttf": "/project-qclay-aI/static/media/PowerGrotesk-Regular.b052d3329dc6f87ae610.ttf",
+    "static/media/SulphurPoint-Bold.ttf": "/project-qclay-aI/static/media/SulphurPoint-Bold.19bcd44ee40e6d7f4aad.ttf",
+    "static/media/Genius.ttf": "/project-qclay-aI/static/media/Genius.f837457156a8ad19ea34.ttf",
+    "static/media/ClashDisplay-Regular.ttf": "/project-qclay-aI/static/media/ClashDisplay-Regular.511c364ea4704a6df142.ttf",
+    "static/media/Kensmark-Bold.ttf": "/project-qclay-aI/static/media/Kensmark-Bold.de81d7a85c2a0648d58d.ttf",
+    "static/media/Digital_tech.ttf": "/project-qclay-aI/static/media/Digital_tech.9c0fd7d77af5dd158c7a.ttf",
+    "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.cb09ac4ece46432e08b9b166c5b56ab9.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.7acaea2f.css.map": "/project-qclay-aI/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/project-qclay-aI/static/js/main.07d3183d.js.map"
+    "main.22847763.css.map": "/project-qclay-aI/static/css/main.22847763.css.map",
+    "main.1ebecf1f.js.map": "/project-qclay-aI/static/js/main.1ebecf1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.22847763.css",
+    "static/js/main.1ebecf1f.js"
   ]
 }
