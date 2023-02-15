@@ -1,0 +1,144 @@
+.industry {
+    padding-top: 129.5px;
+
+    @media screen and (max-width:767px) {
+        padding: 49px 0 55.5px 0;
+    }
+}
+
+.industry__uptitle {
+    font-size: 22px;
+    line-height: 1;
+    color: var(--gray-text-color);
+    margin-bottom: 29px;
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.industry__title {
+    font-size: 80px;
+    line-height: 0.88;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 40.5px;
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        margin-bottom: 51px;
+    }
+}
+
+.industry__block {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+
+    display: flex;
+    align-items: center;
+}
+
+.industry__list {
+    width: 467px;
+    border-right: 1px solid #FFFFFF;
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+        border-right: none;
+    }
+}
+
+.industry__item+.industry__item {
+    border-top: 1px solid #FFFFFF;
+}
+
+.industry__item {
+    padding: 23px 48px 23px 27px;
+    cursor: pointer;
+    color: var(--white-text-color);
+    transition-duration: 700ms;
+
+    &:hover {
+        color: #00B582;
+
+        h3 {
+            svg {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 18px 38px 18px 23px;
+    }
+}
+
+.industry__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Neue Machina';
+    font-size: 26px;
+    line-height: 1;
+    color: inherit;
+
+    svg {
+        transition-property: transform;
+        transition-duration: 700ms;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 20px;
+
+        svg {
+            width: 29.7px;
+            height: 20px;
+        }
+    }
+}
+
+.industry__schema {
+    margin-left: 78px;
+}
+
+.industry__figure {
+    margin-left: 14px;
+}
+
+// text
+.industry__text {
+    max-width: 512px;
+    margin-left: 119px;
+
+    @media screen and (max-width:1480px) {
+        max-width: 350px;
+        margin-left: 60px;
+    }
+
+    @media screen and (max-width:1123px) {
+        margin-left: 30px;
+    }
+}
+
+.text__title {
+    font-family: 'Neue Machina';
+    font-size: 40px;
+    line-height: 1;
+    color: var(--white-text-color);
+    margin-bottom: 46px;
+}
+
+.text__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text__par {
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: var(--white-text-color);
+}

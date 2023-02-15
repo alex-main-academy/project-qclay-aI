@@ -1,0 +1,97 @@
+.impact {
+    padding: 130px 0 224px 0;
+    position: relative;
+    background-image: url(../../images/impact/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width:767px) {
+        padding: 63px 0 70px 0;
+        background-position: center;
+    }
+}
+
+.impact__uptitle {
+    font-size: 22px;
+    line-height: 1;
+    color: var(--gray-text-color);
+    margin-bottom: 29px;
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.impact__title {
+    max-width: 1390px;
+
+    font-size: 80px;
+    line-height: 0.88;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+
+    margin-bottom: 144px;
+
+    @media screen and (max-width:1123px) {
+        margin-bottom: 400px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        max-width: 354px;
+        margin-bottom: 30px;
+    }
+}
+
+.impact__border {
+    border-top: 2.6px dashed #6B6B6B;
+    margin-bottom: 255px;
+}
+
+.impact__text {
+    max-width: 420px;
+    font-size: 20px;
+    text-align: right;
+    text-transform: capitalize;
+    color: var(--white-text-color);
+
+    margin-left: auto;
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+    }
+}
+
+.impact__rocket {
+    position: absolute;
+    left: 50%;
+    bottom: 130px;
+
+    transform: translate(-50%, 0);
+
+    @media screen and (max-width:1123px) {
+        bottom: 30%;
+    }
+
+    @media screen and (max-width:767px) {
+        width: 180px;
+        bottom: 236px;
+        left: 103px;
+        transform: translate(0, 0);
+    }
+}
+
+.impact__ball {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width:767px) {
+        width: 50px;
+        top: 542px;
+        left: 150px;
+        transform: translate(0, 0);
+    }
+}

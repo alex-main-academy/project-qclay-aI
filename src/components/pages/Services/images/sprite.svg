@@ -6,7 +6,7 @@
 <path fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.9586" d="M3.347 29.682h42.909"></path>
 </symbol>
 <symbol id="icon-arrow-right" viewBox="0 0 47 32">
-<path fill="none" stroke="#000000" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.6351" d="M44.242 16.059h-42.259M29.295 30.467c0-7.407 6.768-14.407 14.95-14.407-8.181 0-14.95-7.001-14.95-14.407"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.6351" d="M44.242 16.059h-42.259M29.295 30.467c0-7.407 6.768-14.407 14.95-14.407-8.181 0-14.95-7.001-14.95-14.407"></path>
 </symbol>
 <symbol id="icon-youtube" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8651" d="M31.38 16.049c0 8.454-6.854 15.308-15.308 15.308s-15.308-6.854-15.308-15.308c0-8.454 6.854-15.308 15.308-15.308s15.308 6.854 15.308 15.308z"></path>
@@ -25,7 +25,7 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M12.712 12.112c-0 0.254-0.103 0.497-0.287 0.676s-0.432 0.28-0.692 0.28c-0.259-0-0.508-0.101-0.692-0.28s-0.286-0.423-0.286-0.676c0-0.254 0.103-0.497 0.287-0.676s0.432-0.28 0.692-0.28c0.259 0 0.508 0.101 0.692 0.28s0.286 0.423 0.286 0.676zM12.742 13.775h-1.956v5.985h1.956v-5.985zM15.833 13.775h-1.947v5.985h1.927v-3.141c0-1.75 2.333-1.912 2.333 0v3.141h1.932v-3.791c0-2.949-3.453-2.839-4.265-1.391l0.020-0.803z"></path>
 </symbol>
 <symbol id="icon-arrow-bottom-right" viewBox="0 0 42 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="3.2853" d="M39.091 23.79l-35.682-20.601M19.447 28.668c3.611-6.254 12.738-8.866 19.646-4.877-6.908-3.988-9.21-13.199-5.599-19.453"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="3.2853" d="M39.091 23.79l-35.682-20.601M19.447 28.668c3.611-6.254 12.738-8.866 19.646-4.877-6.908-3.988-9.21-13.199-5.599-19.453"></path>
 </symbol>
 </defs>
 </svg>
