@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.22847763.css",
-    "main.js": "/project-qclay-aI/static/js/main.1ebecf1f.js",
+    "main.css": "/project-qclay-aI/static/css/main.54556c2e.css",
+    "main.js": "/project-qclay-aI/static/js/main.7641d70b.js",
+    "static/media/ball.png": "/project-qclay-aI/static/media/ball.cb33e85275b787beefa6.png",
     "static/media/top-background.jpg": "/project-qclay-aI/static/media/top-background.de81524eecdc2e6b3436.jpg",
     "static/media/Robtronika-Regular.ttf": "/project-qclay-aI/static/media/Robtronika-Regular.3a5bff6562eea11669e5.ttf",
+    "static/media/background.png": "/project-qclay-aI/static/media/background.2d581bba3d651046efe0.png",
+    "static/media/ball-mobile.png": "/project-qclay-aI/static/media/ball-mobile.c9a974d0ec1636e29c15.png",
     "static/media/WhyteInktrap-Medium.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Medium.f23655ec1c93691ae10c.ttf",
     "static/media/WhyteInktrap-Book.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Book.529e1472dfd485cfe3c7.ttf",
     "static/media/PlusJakartaSans-Medium.ttf": "/project-qclay-aI/static/media/PlusJakartaSans-Medium.b1ea1e4a874b401f584a.ttf",
     "static/media/PlusJakartaSans-Regular.ttf": "/project-qclay-aI/static/media/PlusJakartaSans-Regular.e959ca27c856c771bc26.ttf",
     "static/media/top-background-mobile.jpg": "/project-qclay-aI/static/media/top-background-mobile.b804e8a0ddf6c97aa6c4.jpg",
+    "static/media/laptop.png": "/project-qclay-aI/static/media/laptop.32a4166cea499cd82066.png",
     "static/media/NeueMachina-Regular.ttf": "/project-qclay-aI/static/media/NeueMachina-Regular.3e80df68866b54fdec1d.ttf",
     "static/media/NeueMachina-Ultrabold.ttf": "/project-qclay-aI/static/media/NeueMachina-Ultrabold.d1877796f7b16cfd54ba.ttf",
     "static/media/PowerGrotesk-UltraBold.ttf": "/project-qclay-aI/static/media/PowerGrotesk-UltraBold.3487eaf6b13d36ed5678.ttf",
@@ -16,15 +20,19 @@
     "static/media/SulphurPoint-Bold.ttf": "/project-qclay-aI/static/media/SulphurPoint-Bold.19bcd44ee40e6d7f4aad.ttf",
     "static/media/Genius.ttf": "/project-qclay-aI/static/media/Genius.f837457156a8ad19ea34.ttf",
     "static/media/ClashDisplay-Regular.ttf": "/project-qclay-aI/static/media/ClashDisplay-Regular.511c364ea4704a6df142.ttf",
+    "static/media/background-mobile.png": "/project-qclay-aI/static/media/background-mobile.bdb38a587cb5dc3820b6.png",
+    "static/media/rocket.png": "/project-qclay-aI/static/media/rocket.3c9b35ac13ab1f15038f.png",
     "static/media/Kensmark-Bold.ttf": "/project-qclay-aI/static/media/Kensmark-Bold.de81d7a85c2a0648d58d.ttf",
     "static/media/Digital_tech.ttf": "/project-qclay-aI/static/media/Digital_tech.9c0fd7d77af5dd158c7a.ttf",
-    "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.cb09ac4ece46432e08b9b166c5b56ab9.svg",
+    "static/media/schema.svg": "/project-qclay-aI/static/media/schema.3b0dbeefd1b9ee256d3c0bf533aba7f7.svg",
+    "static/media/circle-figure.svg": "/project-qclay-aI/static/media/circle-figure.f7d000766db86cd3835d6aa69f0b5737.svg",
+    "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.7e5b97006d2520cddc72317c8da958d6.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.22847763.css.map": "/project-qclay-aI/static/css/main.22847763.css.map",
-    "main.1ebecf1f.js.map": "/project-qclay-aI/static/js/main.1ebecf1f.js.map"
+    "main.54556c2e.css.map": "/project-qclay-aI/static/css/main.54556c2e.css.map",
+    "main.7641d70b.js.map": "/project-qclay-aI/static/js/main.7641d70b.js.map"
   },
   "entrypoints": [
-    "static/css/main.22847763.css",
-    "static/js/main.1ebecf1f.js"
+    "static/css/main.54556c2e.css",
+    "static/js/main.7641d70b.js"
   ]
 }
