@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.54556c2e.css",
-    "main.js": "/project-qclay-aI/static/js/main.7641d70b.js",
+    "main.css": "/project-qclay-aI/static/css/main.91f8200c.css",
+    "main.js": "/project-qclay-aI/static/js/main.3ba94a6c.js",
     "static/media/ball.png": "/project-qclay-aI/static/media/ball.cb33e85275b787beefa6.png",
+    "static/media/background-2.png": "/project-qclay-aI/static/media/background-2.93b0717b6975eef785b8.png",
+    "static/media/background-3.png": "/project-qclay-aI/static/media/background-3.70c70cb72234379eb908.png",
     "static/media/top-background.jpg": "/project-qclay-aI/static/media/top-background.de81524eecdc2e6b3436.jpg",
+    "static/media/boy.png": "/project-qclay-aI/static/media/boy.61e3fd82d5bd7bbc160b.png",
+    "static/media/girl.png": "/project-qclay-aI/static/media/girl.085fb588b254d14c7ddb.png",
+    "static/media/background-1.png": "/project-qclay-aI/static/media/background-1.0254c5b382ebe3974cf9.png",
     "static/media/Robtronika-Regular.ttf": "/project-qclay-aI/static/media/Robtronika-Regular.3a5bff6562eea11669e5.ttf",
+    "static/media/background-4.png": "/project-qclay-aI/static/media/background-4.0b618f3c8d3838b9e1c7.png",
     "static/media/background.png": "/project-qclay-aI/static/media/background.2d581bba3d651046efe0.png",
     "static/media/ball-mobile.png": "/project-qclay-aI/static/media/ball-mobile.c9a974d0ec1636e29c15.png",
     "static/media/WhyteInktrap-Medium.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Medium.f23655ec1c93691ae10c.ttf",
@@ -17,22 +23,28 @@
     "static/media/NeueMachina-Ultrabold.ttf": "/project-qclay-aI/static/media/NeueMachina-Ultrabold.d1877796f7b16cfd54ba.ttf",
     "static/media/PowerGrotesk-UltraBold.ttf": "/project-qclay-aI/static/media/PowerGrotesk-UltraBold.3487eaf6b13d36ed5678.ttf",
     "static/media/PowerGrotesk-Regular.ttf": "/project-qclay-aI/static/media/PowerGrotesk-Regular.b052d3329dc6f87ae610.ttf",
+    "static/media/image-hand.png": "/project-qclay-aI/static/media/image-hand.cb32f8d5937a3b89be55.png",
+    "static/media/background-3-mobile.png": "/project-qclay-aI/static/media/background-3-mobile.5b8585a117cfc9a2f74a.png",
     "static/media/SulphurPoint-Bold.ttf": "/project-qclay-aI/static/media/SulphurPoint-Bold.19bcd44ee40e6d7f4aad.ttf",
     "static/media/Genius.ttf": "/project-qclay-aI/static/media/Genius.f837457156a8ad19ea34.ttf",
+    "static/media/background-1-mobile.png": "/project-qclay-aI/static/media/background-1-mobile.cf5c64fb532c16a34e0c.png",
     "static/media/ClashDisplay-Regular.ttf": "/project-qclay-aI/static/media/ClashDisplay-Regular.511c364ea4704a6df142.ttf",
     "static/media/background-mobile.png": "/project-qclay-aI/static/media/background-mobile.bdb38a587cb5dc3820b6.png",
     "static/media/rocket.png": "/project-qclay-aI/static/media/rocket.3c9b35ac13ab1f15038f.png",
+    "static/media/card.png": "/project-qclay-aI/static/media/card.e19946aeb04ad435da16.png",
+    "static/media/background-2-mobile.png": "/project-qclay-aI/static/media/background-2-mobile.deeab88860ff8afea0d7.png",
     "static/media/Kensmark-Bold.ttf": "/project-qclay-aI/static/media/Kensmark-Bold.de81d7a85c2a0648d58d.ttf",
     "static/media/Digital_tech.ttf": "/project-qclay-aI/static/media/Digital_tech.9c0fd7d77af5dd158c7a.ttf",
     "static/media/schema.svg": "/project-qclay-aI/static/media/schema.3b0dbeefd1b9ee256d3c0bf533aba7f7.svg",
+    "static/media/line.png": "/project-qclay-aI/static/media/line.3e406dbc045aca61e45b.png",
+    "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "static/media/circle-figure.svg": "/project-qclay-aI/static/media/circle-figure.f7d000766db86cd3835d6aa69f0b5737.svg",
-    "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.7e5b97006d2520cddc72317c8da958d6.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.54556c2e.css.map": "/project-qclay-aI/static/css/main.54556c2e.css.map",
-    "main.7641d70b.js.map": "/project-qclay-aI/static/js/main.7641d70b.js.map"
+    "main.91f8200c.css.map": "/project-qclay-aI/static/css/main.91f8200c.css.map",
+    "main.3ba94a6c.js.map": "/project-qclay-aI/static/js/main.3ba94a6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.54556c2e.css",
-    "static/js/main.7641d70b.js"
+    "static/css/main.91f8200c.css",
+    "static/js/main.3ba94a6c.js"
   ]
 }
