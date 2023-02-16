@@ -1,0 +1,223 @@
+.contact {
+    padding: 130px 0 128px 0;
+    position: relative;
+
+    @media screen and (max-width:767px) {
+        padding: 69px 0 88px 0;
+    }
+}
+
+.contact__card {
+    position: absolute;
+    top: 192px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+
+    @media screen and (max-width:1123px) {
+        top: 150px;
+        width: 250px;
+    }
+
+    @media screen and (max-width:767px) {
+        width: 138px;
+        top: 69px;
+        left: 53%;
+        transform: translate(-53%, 0);
+    }
+}
+
+.contact__title {
+    position: relative;
+    font-size: 273px;
+    line-height: 1.03;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 40px;
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media screen and (max-width:1600px) {
+        font-size: 180px;
+        text-align: center;
+    }
+
+    @media screen and (max-width:1123px) {
+        font-size: 130px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 65px;
+        margin-bottom: 26px;
+        line-height: 0.91;
+    }
+}
+
+.contact__border {
+    border-top: 3px dashed #6B6B6B;
+    margin-bottom: 120px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 61px;
+    }
+}
+
+.contact__form {
+    input {
+        border: none;
+        padding: 40px 0;
+        border-bottom: 1.5px solid #FFFFFF;
+        background-color: transparent;
+        opacity: 1;
+
+        font-family: 'Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 0.77;
+        color: var(--white-text-color);
+
+        &::placeholder {
+            color: var(--white-text-color);
+            opacity: 1;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        input {
+            padding: 15px 0;
+            font-size: 24px;
+            line-height: 0.84;
+        }
+    }
+}
+
+.form__label {
+    display: block;
+
+    span {
+        display: block;
+        font-family: 'Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: var(--gray-text-color);
+    }
+
+    &:nth-child(3) {
+        margin-top: 46px;
+    }
+
+    @media screen and (max-width:767px) {
+        span {
+            font-size: 16px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 28px;
+        }
+    }
+}
+
+.form__top {
+    display: flex;
+    width: 100%;
+    gap: 78px;
+    margin-bottom: 46px;
+
+    div {
+        width: 50%;
+    }
+
+    @media screen and (max-width:1123px) {
+        gap: 50px;
+    }
+
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+        gap: 28px;
+        margin-bottom: 28px;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+.form__name {
+    display: block;
+    width: 100%;
+}
+
+.form__email {
+    display: block;
+    width: 100%;
+}
+
+.form__company {
+    display: block;
+    width: 100%;
+}
+
+.form__project {
+    display: block;
+    width: 100%;
+    padding-bottom: 100px !important;
+
+    @media screen and (max-width:767px) {
+        padding-bottom: 105px !important;
+    }
+}
+
+.form__buttons {
+    margin-top: 82px;
+    text-align: right;
+
+    @media screen and (max-width:767px) {
+        margin-top: 67px;
+    }
+}
+
+.form__send {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: var(--white-text-color);
+
+    display: inline-block;
+    padding: 24px 55.5px;
+    background-color: transparent;
+    border: 1.4px solid #FFFFFF;
+    border-radius: 56px;
+    cursor: pointer;
+
+    @media screen and (max-width:767px) {
+        padding: 18.5px 38px;
+        font-size: 14px;
+    }
+}
+
+.form__icon {
+    display: inline-block;
+    padding: 26.5px 35px;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 56px;
+    cursor: pointer;
+
+    @media screen and (max-width:767px) {
+        padding: 21px 27px;
+
+        svg {
+            width: 22.5px;
+            height: 15px;
+        }
+    }
+}

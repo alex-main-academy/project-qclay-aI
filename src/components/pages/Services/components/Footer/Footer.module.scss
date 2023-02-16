@@ -1,0 +1,68 @@
+.footer {
+    padding: 66px 0 71px 0;
+    background-color: #00B582;
+    position: relative;
+
+    @media screen and (max-width:767px) {
+        padding: 29px 0 37px 0;
+    }
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+        gap: 22.5px;
+    }
+}
+
+.footer__logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Power Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 1.25;
+    color: var(--black-text-color);
+
+    @media screen and (max-width:1123px) {
+        position: static;
+    }
+
+    @media screen and (max-width:767px) {
+        gap: 9px;
+        font-size: 23px;
+
+        img {
+            width: 42px;
+        }
+    }
+}
+
+.footer__copy {
+    font-family: 'Plus Jakarta Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.27;
+    text-transform: capitalize;
+    color: var(--black-text-color);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width:1123px) {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 14px;
+        margin-right: auto;
+    }
+}

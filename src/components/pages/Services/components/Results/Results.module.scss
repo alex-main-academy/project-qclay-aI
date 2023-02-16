@@ -79,9 +79,15 @@
     width: 25%;
     background-color: #1B1B1B;
     border-radius: 20px;
-    padding: 80px 38.5px 45px 38.5px;
+    padding: 80px 46px 45px 46px;
     display: flex;
     flex-direction: column;
+
+    div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 
     .results__sum {
         color: var(--accent-text-color);
@@ -168,7 +174,7 @@
     height: 50%;
     background-color: #00B582;
     border-radius: 20px;
-    padding: 80px 5px 70px 48px;
+    padding: 80px 5px 45px 48px;
 
     display: flex;
     flex-direction: column;
@@ -204,7 +210,7 @@
     border-radius: 20px;
     border: 1.5px solid #000000;
 
-    padding: 80px 5px 70px 48px;
+    padding: 80px 5px 45px 48px;
 
     display: flex;
     flex-direction: column;
