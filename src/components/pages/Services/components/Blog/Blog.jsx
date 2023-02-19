@@ -1,11 +1,20 @@
 import css from './Blog.module.scss';
 import sprite from '../../images/sprite.svg';
+import dotsLottie from '../../lotties/dots_feather.json';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const Blog = () => {
   return (
     <section className={css.blog}>
       <ul className={css.blog__list}>
         <li className={css.blog__item}>
+          <h2 className={css.blog__title}>Our Blog</h2>
+          <Player
+            src={dotsLottie}
+            autoplay
+            loop
+            className={css.blog__lottie}
+          ></Player>
           <div className={css.blog__buttons}>
             <button type="button" className={css.blog__button__black}>
               <svg width="29" height="20">

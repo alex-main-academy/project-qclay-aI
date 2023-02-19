@@ -1,16 +1,16 @@
 .hero {
+    position: relative;
     padding-bottom: 65px;
-    background-image: linear-gradient(to right, rgba(36, 188, 145, 0.6), rgba(36, 188, 145, 0.6)), url(../../images/hero/top-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
 
     @media screen and (max-width:767px) {
         padding-bottom: 36px;
-        background-image: linear-gradient(to right, rgba(36, 188, 145, 0.6), rgba(36, 188, 145, 0.6)), url(../../images/hero/top-background-mobile.jpg);
     }
 }
 
 .hero__text {
+    position: relative;
+    z-index: 1;
     max-width: 228px;
     font-family: 'Neue Machina';
     font-size: 21px;
@@ -23,4 +23,11 @@
         font-size: 16px;
         margin-top: 311px;
     }
+}
+
+.hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }

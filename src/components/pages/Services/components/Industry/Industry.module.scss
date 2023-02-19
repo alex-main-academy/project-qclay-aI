@@ -122,14 +122,6 @@
     }
 }
 
-.text__title {
-    font-family: 'Neue Machina';
-    font-size: 40px;
-    line-height: 1;
-    color: var(--white-text-color);
-    margin-bottom: 46px;
-}
-
 .text__list {
     display: flex;
     flex-direction: column;
@@ -141,4 +133,12 @@
     line-height: 1.25;
     text-transform: capitalize;
     color: var(--white-text-color);
+}
+
+.text__title {
+    font-family: 'Neue Machina';
+    font-size: 40px;
+    line-height: 1;
+    color: var(--white-text-color);
+    margin-bottom: 46px;
 }

@@ -1,7 +1,6 @@
 import Media from 'react-media';
 import css from './Impact.module.scss';
-import rocketImage from '../../images/impact/rocket.png';
-import ballImage from '../../images/impact/ball.png';
+import tennisVideo from '../../video/tennis.mp4';
 
 const Impact = () => {
   return (
@@ -16,8 +15,9 @@ const Impact = () => {
           query="(max-width:767px)"
           render={() => <div className={css.impact__border}></div>}
         />
-        <img src={rocketImage} alt="rocket" className={css.impact__rocket} />
-        <img src={ballImage} alt="ball" className={css.impact__ball} />
+        <video autoPlay muted loop className={css.impact__video}>
+          <source src={tennisVideo} />
+        </video>
         <p className={css.impact__text}>
           It is no longer feasible to resist the integration of AI in various
           industries, but rather to embrace and lead it in order to stay

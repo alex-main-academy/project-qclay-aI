@@ -1,10 +1,15 @@
 import css from './Industry.module.scss';
 import sprite from '../../images/sprite.svg';
-import schemaImage from '../../images/industry/schema.svg';
 import figureImage from '../../images/industry/figure.png';
 import Media from 'react-media';
+import IndustryBlock from './IndustryBlock';
+import lineLottie from '../../lotties/lines_ai.json';
+import { Player } from '@lottiefiles/react-lottie-player';
+import React, { useRef, useState } from 'react';
 
 const Industry = () => {
+  const playerRef = useRef(Player);
+
   const subtitlesArray = [
     'Healthcare',
     'Logistics',
@@ -17,6 +22,15 @@ const Industry = () => {
     'Social Media',
   ];
 
+  const [text, setText] = useState('Healthcare');
+
+  const handleChangeText = event => {
+    const title = event.target.innerText;
+    setText(title);
+    playerRef.current.stop();
+    playerRef.current.play();
+  };
+
   return (
     <section className={css.industry}>
       <div className="container">
@@ -28,7 +42,11 @@ const Industry = () => {
           <ul className={css.industry__list}>
             {subtitlesArray.map(elem => {
               return (
-                <li className={css.industry__item} key={elem}>
+                <li
+                  className={css.industry__item}
+                  key={elem}
+                  onMouseEnter={event => handleChangeText(event)}
+                >
                   <h3 className={css.industry__subtitle}>
                     <span>{elem}</span>
                     <svg width="37.6" height="25.6">
@@ -43,10 +61,16 @@ const Industry = () => {
             query="(min-width:1124px)"
             render={() => (
               <>
-                <img
-                  src={schemaImage}
-                  alt="schema"
-                  className={css.industry__schema}
+                <Player
+                  src={lineLottie}
+                  direction={1}
+                  ref={playerRef}
+                  viewBox="0 0 100% 100%"
+                  style={{
+                    width: '260px',
+                    height: '580px',
+                    marginLeft: '78px',
+                  }}
                 />
                 <img
                   src={figureImage}
@@ -61,28 +85,7 @@ const Industry = () => {
             query="(min-width:768px)"
             render={() => (
               <div className={css.industry__text}>
-                <h3 className={css.text__title}>Healthcare</h3>
-                <ul className={css.text__list}>
-                  <li className={css.text__item}>
-                    <p className={css.text__par}>
-                      -Use of AI & automation to build functional & lifesaving
-                      AI systems in healthcare.
-                    </p>
-                  </li>
-                  <li className={css.text__item}>
-                    <p className={css.text__par}>
-                      -Provision of data analytics services to support
-                      healthcare decisions.
-                    </p>
-                  </li>
-                  <li className={css.text__item}>
-                    <p className={css.text__par}>
-                      -Development of AI-enabled platforms for patient data
-                      collection to support diagnosis, notifications and disease
-                      prevention.
-                    </p>
-                  </li>
-                </ul>
+                <IndustryBlock text={text} />
               </div>
             )}
           />

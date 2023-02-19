@@ -16,23 +16,25 @@ import Team from './components/Team/Team';
 
 const Services = () => {
   return (
-    <main>
-      <Hero />
-      <Science />
-      <Service />
-      <Industry />
-      <Identify />
-      <Process />
-      <Results />
-      <Impact />
-      <Ball />
-      <Cases />
-      <Team />
-      <Blog />
-      <Price />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <main>
+        <Hero />
+        <Science />
+        <Service />
+        <Industry />
+        <Identify />
+        <Process />
+        <Results />
+        <Impact />
+        <Ball />
+        <Cases />
+        <Team />
+        <Blog />
+        <Price />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 

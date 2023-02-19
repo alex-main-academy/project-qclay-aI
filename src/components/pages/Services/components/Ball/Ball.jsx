@@ -1,7 +1,7 @@
 import css from './Ball.module.scss';
-import ballImage from '../../images/ball/ball.png';
 import ballImageMobile from '../../images/ball/ball-mobile.png';
 import Media from 'react-media';
+import lampVideo from '../../video/lamps.mp4';
 
 const Ball = () => {
   return (
@@ -9,7 +9,9 @@ const Ball = () => {
       <Media
         query="(min-width:768px)"
         render={() => (
-          <img src={ballImage} alt="ball" className={css.ball__image} />
+          <video autoPlay muted loop className={css.ball__video}>
+            <source src={lampVideo} />
+          </video>
         )}
       />
       <Media

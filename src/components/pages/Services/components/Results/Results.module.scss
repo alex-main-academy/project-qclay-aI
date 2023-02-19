@@ -76,6 +76,7 @@
 }
 
 .results__saved {
+    position: relative;
     width: 25%;
     background-color: #1B1B1B;
     border-radius: 20px;
@@ -119,10 +120,25 @@
 }
 
 .results__laptop {
+    position: absolute;
     max-width: 100%;
+    left: 0;
+    top: 150px;
+    border: none;
+
+    @media screen and (max-width:1123px) {
+        max-width: 300px;
+        left: 90%;
+        top: 50px;
+
+        transform: translate(-90%, 0);
+    }
 
     @media screen and (max-width:767px) {
-        max-width: 168px;
+        max-width: 200px;
+        top: 10px;
+        left: 95%;
+        transform: translate(-95%, 0);
     }
 }
 

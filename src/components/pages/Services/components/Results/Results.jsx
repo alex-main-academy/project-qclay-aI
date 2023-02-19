@@ -1,6 +1,7 @@
 import css from './Results.module.scss';
 import cricleImage from '../../images/results/circle.png';
 import laptopImage from '../../images/results/laptop.png';
+import laptopVideo from '../../video/laptop.mp4';
 import Media from 'react-media';
 
 const Results = () => {
@@ -25,12 +26,9 @@ const Results = () => {
               <Media
                 query="(min-width:1123px)"
                 render={() => (
-                  <img
-                    src={laptopImage}
-                    alt="laptop"
-                    width="363"
-                    className={css.results__laptop}
-                  />
+                  <video autoPlay muted loop className={css.results__laptop}>
+                    <source src={laptopVideo} />
+                  </video>
                 )}
               />
               <p className={css.results__text}>
@@ -40,12 +38,9 @@ const Results = () => {
             <Media
               query="(max-width:1123px)"
               render={() => (
-                <img
-                  src={laptopImage}
-                  alt="laptop"
-                  width="363"
-                  className={css.results__laptop}
-                />
+                <video autoPlay muted loop className={css.results__laptop}>
+                  <source src={laptopVideo} />
+                </video>
               )}
             />
           </div>

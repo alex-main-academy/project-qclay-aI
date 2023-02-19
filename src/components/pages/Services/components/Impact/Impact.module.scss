@@ -1,9 +1,6 @@
 .impact {
     padding: 130px 0 224px 0;
     position: relative;
-    background-image: url(../../images/impact/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 
     @media screen and (max-width:767px) {
         padding: 63px 0 70px 0;
@@ -12,6 +9,8 @@
 }
 
 .impact__uptitle {
+    position: relative;
+    z-index: 1;
     font-size: 22px;
     line-height: 1;
     color: var(--gray-text-color);
@@ -24,6 +23,8 @@
 }
 
 .impact__title {
+    position: relative;
+    z-index: 1;
     max-width: 1390px;
 
     font-size: 80px;
@@ -45,11 +46,15 @@
 }
 
 .impact__border {
+    position: relative;
+    z-index: 1;
     border-top: 2.6px dashed #6B6B6B;
     margin-bottom: 255px;
 }
 
 .impact__text {
+    position: relative;
+    z-index: 1;
     max-width: 420px;
     font-size: 20px;
     text-align: right;
@@ -63,35 +68,10 @@
     }
 }
 
-.impact__rocket {
+// video
+.impact__video {
     position: absolute;
-    left: 50%;
-    bottom: 130px;
-
-    transform: translate(-50%, 0);
-
-    @media screen and (max-width:1123px) {
-        bottom: 30%;
-    }
-
-    @media screen and (max-width:767px) {
-        width: 180px;
-        bottom: 236px;
-        left: 103px;
-        transform: translate(0, 0);
-    }
-}
-
-.impact__ball {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (max-width:767px) {
-        width: 50px;
-        top: 542px;
-        left: 150px;
-        transform: translate(0, 0);
-    }
+    top: 0;
+    left: 0;
+    max-width: 100%;
 }
