@@ -1,6 +1,5 @@
 import css from './Results.module.scss';
 import cricleImage from '../../images/results/circle.png';
-import laptopImage from '../../images/results/laptop.png';
 import laptopVideo from '../../video/laptop.mp4';
 import Media from 'react-media';
 
