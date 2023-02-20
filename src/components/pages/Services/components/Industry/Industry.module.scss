@@ -32,6 +32,7 @@
 }
 
 .industry__block {
+    position: relative;
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 
@@ -42,6 +43,10 @@
 .industry__list {
     width: 467px;
     border-right: 1px solid #FFFFFF;
+
+    @media screen and (max-width:1250px) {
+        width: 350px;
+    }
 
     @media screen and (max-width:767px) {
         width: 100%;
@@ -67,10 +72,45 @@
                 transform: rotate(-45deg);
             }
         }
+
+        .industry__text {
+            top: 50%;
+            right: 40px;
+            transform: translate(0, -50%);
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     @media screen and (max-width:767px) {
-        padding: 18px 38px 18px 23px;
+        padding: 0;
+        position: relative;
+
+        &:hover {
+            padding-bottom: 63.5px;
+
+            .text__mobile {
+                opacity: 1;
+            }
+
+            .mobile__title {
+                margin-top: 56.5px;
+                margin-bottom: 28px;
+                font-size: 20px;
+            }
+
+            .industry__subtitle {
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            .mobile__par {
+                font-size: 12px;
+            }
+
+            .mobile__par+.mobile__par {
+                margin-top: 15px;
+            }
+        }
     }
 }
 
@@ -91,6 +131,7 @@
 
     @media screen and (max-width:767px) {
         font-size: 20px;
+        padding: 18px 38px 18px 23px;
 
         svg {
             width: 29.7px;
@@ -109,16 +150,27 @@
 
 // text
 .industry__text {
-    max-width: 512px;
-    margin-left: 119px;
+    position: absolute;
+    width: 512px;
+    top: 50%;
+    right: 40px;
+    transform: translate(0, -50%);
+    transition-duration: 800ms;
+    opacity: 0;
+    visibility: hidden;
 
     @media screen and (max-width:1480px) {
-        max-width: 350px;
-        margin-left: 60px;
+        width: 400px;
     }
 
-    @media screen and (max-width:1123px) {
-        margin-left: 30px;
+    @media screen and (max-width:1350px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width:768px) {
+        position: static;
+        width: 100%;
+        transform: translate(0, 0);
     }
 }
 
@@ -141,4 +193,28 @@
     line-height: 1;
     color: var(--white-text-color);
     margin-bottom: 46px;
+}
+
+// text mobile
+.text__mobile {
+    box-sizing: border-box;
+    padding-left: 23px;
+    padding-right: 38px;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.mobile__title {
+    font-family: 'Neue Machina';
+    font-size: 0;
+    line-height: 1;
+    color: var(--white-text-color);
+    margin-top: 0;
+}
+
+.mobile__par {
+    font-size: 0;
+    line-height: 1.24;
+    text-transform: capitalize;
+    color: var(--white-text-color);
 }

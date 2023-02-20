@@ -196,6 +196,49 @@
             left: 237px;
         }
     }
+
+    @media screen and (max-width:384px) {
+        padding: 9px;
+        font-size: 12px;
+
+        &:nth-child(1) {
+            left: 0;
+            top: 50px;
+            transform: rotate(7.09deg);
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            top: 100px;
+            transform: rotate(-21.89deg);
+        }
+
+        &:nth-child(4) {
+            position: absolute;
+            top: 81px;
+            left: 110px;
+            transform: rotate(-22.9deg);
+        }
+
+        &:nth-child(5) {
+            position: absolute;
+            top: 45px;
+            left: 165px;
+            transform: rotate(29.77deg);
+        }
+
+        &:nth-child(6) {
+            padding: 9px;
+            font-size: 12px;
+            left: 203px;
+            top: 106px;
+        }
+
+        &:nth-child(7) {
+            padding: 9px;
+            left: 207px;
+        }
+    }
 }
 
 // features
