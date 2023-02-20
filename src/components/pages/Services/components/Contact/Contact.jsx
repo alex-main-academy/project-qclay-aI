@@ -1,15 +1,81 @@
+import { motion } from 'framer-motion';
 import css from './Contact.module.scss';
 import sprite from '../../images/sprite.svg';
 import cardImage from '../../images/contact/card.png';
+import Media from 'react-media';
+
+const borderAnimation = {
+  hidden: {
+    x: '-50%',
+  },
+  visible: {
+    x: 0,
+    transition: { duration: 0.5 },
+  },
+};
+
+const titleAnimation = {
+  hidden: {
+    opacity: 0,
+    y: 200,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  },
+};
+
+const cardAnimation = {
+  hidden: {
+    opacity: 0,
+    top: '400px',
+    rotate: '45deg',
+    translate: '-50%',
+  },
+  visible: {
+    opacity: 1,
+    top: '192px',
+    rotate: '0',
+    translate: '-50%',
+    transition: { duration: 0.5, delay: 0.3 },
+  },
+};
+
+const mobileCardAnimation = {
+  hidden: {
+    opacity: 0,
+    top: '400px',
+    rotate: '45deg',
+    translate: '-50%',
+  },
+  visible: {
+    opacity: 1,
+    top: '85px',
+    rotate: '0',
+    translate: '-50%',
+    transition: { duration: 0.5, delay: 0.3 },
+  },
+};
 
 const Contact = () => {
   return (
     <section className={css.contact}>
       <div className="container">
-        <h2 className={css.contact__title}>
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          variants={titleAnimation}
+          className={css.contact__title}
+        >
           Cont<span>act</span> Us
-        </h2>
-        <div className={css.contact__border}></div>
+        </motion.h2>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={borderAnimation}
+          className={css.contact__border}
+        ></motion.div>
         <form className={css.contact__form}>
           <div className={css.form__top}>
             <div>
@@ -62,7 +128,32 @@ const Contact = () => {
             </button>
           </div>
         </form>
-        <img src={cardImage} alt="card" className={css.contact__card} />
+        <Media
+          query="(min-width:768px)"
+          render={() => (
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              variants={cardAnimation}
+              src={cardImage}
+              alt="card"
+              className={css.contact__card}
+            />
+          )}
+        />
+        <Media
+          query="(max-width:767px)"
+          render={() => (
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              variants={mobileCardAnimation}
+              src={cardImage}
+              alt="card"
+              className={css.contact__card}
+            />
+          )}
+        />
       </div>
     </section>
   );

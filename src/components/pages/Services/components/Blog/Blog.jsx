@@ -1,7 +1,32 @@
+import { motion } from 'framer-motion';
+import { Player } from '@lottiefiles/react-lottie-player';
 import css from './Blog.module.scss';
 import sprite from '../../images/sprite.svg';
 import dotsLottie from '../../lotties/dots_feather.json';
-import { Player } from '@lottiefiles/react-lottie-player';
+import handBackground from '../../images/blog/background-3.png';
+import lightBackground from '../../images/blog/background-4.png';
+
+const textAnimation = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  },
+};
+
+const backgroundAnimation = {
+  hidden: {
+    scale: 1.2,
+  },
+  visible: {
+    scale: 1,
+    transition: { duration: 0.5 },
+  },
+};
 
 const Blog = () => {
   return (
@@ -30,9 +55,14 @@ const Blog = () => {
         </li>
         <li className={css.blog__item}>
           <p className={css.blog__category}>Category</p>
-          <h3 className={css.blog__subtitle}>
+          <motion.h3
+            initial="hidden"
+            whileInView="visible"
+            variants={textAnimation}
+            className={css.blog__subtitle}
+          >
             Digital Transformation of a large Telematic Service
-          </h3>
+          </motion.h3>
           <div className={css.blog__info}>
             <p className={css.blog__time}>
               <svg width="20" height="23">
@@ -49,10 +79,23 @@ const Blog = () => {
           </div>
         </li>
         <li className={css.blog__item}>
+          <motion.img
+            initial="hidden"
+            whileInView="visible"
+            variants={backgroundAnimation}
+            src={handBackground}
+            alt="hand"
+            className={css.blog__background}
+          />
           <p className={css.blog__category}>Category</p>
-          <h3 className={css.blog__subtitle}>
+          <motion.h3
+            initial="hidden"
+            whileInView="visible"
+            variants={textAnimation}
+            className={css.blog__subtitle}
+          >
             Digital Transformation of a large Telematic Service
-          </h3>
+          </motion.h3>
           <div className={css.blog__info}>
             <p className={css.blog__time}>
               <svg width="20" height="23">
@@ -69,10 +112,23 @@ const Blog = () => {
           </div>
         </li>
         <li className={css.blog__item}>
+          <motion.img
+            initial="hidden"
+            whileInView="visible"
+            variants={backgroundAnimation}
+            src={lightBackground}
+            alt="hand"
+            className={css.blog__background}
+          />
           <p className={css.blog__category}>Category</p>
-          <h3 className={css.blog__subtitle}>
+          <motion.h3
+            initial="hidden"
+            whileInView="visible"
+            variants={textAnimation}
+            className={css.blog__subtitle}
+          >
             Digital Transformation of a large Telematic Service
-          </h3>
+          </motion.h3>
           <div className={css.blog__info}>
             <p className={css.blog__time}>
               <svg width="20" height="23">

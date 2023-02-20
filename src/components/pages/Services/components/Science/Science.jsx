@@ -1,15 +1,54 @@
-import css from './Science.module.scss';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import css from './Science.module.scss';
 import sprite from '../../images/sprite.svg';
 import titleIcon from '../../images/science/title-icon.png';
 import circlesImage from '../../images/science/circle-image.png';
+
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2, duration: 1 },
+  }),
+};
+
+const imageAnimation = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    transition: { duration: 1 },
+  },
+};
+
+const borderAnimation = {
+  hidden: {
+    x: '-60%',
+  },
+  visible: {
+    x: 0,
+    transition: { duration: 1.5 },
+  },
+};
 
 const Science = () => {
   return (
     <section className={css.science}>
       <div className="container">
         <div className={css.science__top}>
-          <h2 className={css.science__title}>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            custom={1}
+            variants={textAnimation}
+            className={css.science__title}
+          >
             Data Science and AI product development Company
             <img
               src={titleIcon}
@@ -17,22 +56,37 @@ const Science = () => {
               width="78.5"
               className={css.science__title__icon}
             />
-          </h2>
-          <div className={css.science__contact}>
+          </motion.h2>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            custom={2}
+            variants={textAnimation}
+            className={css.science__contact}
+          >
             <Link className={css.science__contact__link}>Contact Us</Link>
             <Link className={css.science__contact__arrow}>
               <svg width="29" height="20">
                 <use href={sprite + '#icon-arrow-right'}></use>
               </svg>
             </Link>
-          </div>
+          </motion.div>
         </div>
 
-        <div className={css.science__border}></div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={borderAnimation}
+          className={css.science__border}
+        ></motion.div>
         <p className={css.science__year}>2023</p>
 
         <div className={css.science__bottom}>
-          <img
+          {/* <Player src={logoLottie} autoplay /> */}
+          <motion.img
+            initial="hidden"
+            whileInView="visible"
+            variants={imageAnimation}
             src={circlesImage}
             alt="circles"
             className={css.science__circles}

@@ -21,6 +21,7 @@ p {
     max-width: 1550px;
     margin: 0 auto;
     padding: 0 10px;
+    overflow: hidden;
 
     @media screen and (max-width:1124px) {
         max-width: 768px;
@@ -31,22 +32,4 @@ p {
         max-width: 374px;
         padding: 0 5px;
     }
-}
-
-.my-node-enter {
-    opacity: 0;
-}
-
-.my-node-enter-active {
-    opacity: 1;
-    transition: opacity 1000ms;
-}
-
-.my-node-exit {
-    opacity: 1;
-}
-
-.my-node-exit-active {
-    opacity: 0;
-    transition: opacity 1000ms;
 }

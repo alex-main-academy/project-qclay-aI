@@ -2,7 +2,7 @@ import css from './Industry.module.scss';
 import sprite from '../../images/sprite.svg';
 import figureImage from '../../images/industry/figure.png';
 import Media from 'react-media';
-import lineLottie from '../../lotties/lines_ai.json';
+import lineLottie from '../../lotties/ai_lines.json';
 import { Player } from '@lottiefiles/react-lottie-player';
 import React, { useRef } from 'react';
 import industryContentArray from './IndustryContentArray';

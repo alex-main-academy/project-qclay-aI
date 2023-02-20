@@ -1,9 +1,44 @@
+import { useState } from 'react';
+import { animated, useSpring } from '@react-spring/web';
+import { InView } from 'react-intersection-observer';
+import Media from 'react-media';
 import css from './Results.module.scss';
 import cricleImage from '../../images/results/circle.png';
 import laptopVideo from '../../video/laptop.mp4';
-import Media from 'react-media';
 
 const Results = () => {
+  const [inView, setInView] = useState(false);
+
+  const { number } = useSpring({
+    from: { number: 578.876 },
+    number: 608.603,
+    config: {
+      duration: 750,
+    },
+    delay: 0,
+    reset: true,
+  });
+
+  const { secondNumber } = useSpring({
+    from: { secondNumber: 580.055 },
+    secondNumber: 1318.367,
+    config: {
+      duration: 750,
+    },
+    delay: 0,
+    reset: true,
+  });
+
+  const { thirdNumber } = useSpring({
+    from: { thirdNumber: 4.298 },
+    thirdNumber: 4.403,
+    config: {
+      duration: 750,
+    },
+    delay: 0,
+    reset: true,
+  });
+
   return (
     <section className={css.results}>
       <div className="container">
@@ -21,7 +56,17 @@ const Results = () => {
           </div>
           <div className={css.results__saved}>
             <div>
-              <p className={css.results__sum}>$608,603</p>
+              <InView onChange={setInView}>
+                {({ ref }) => (
+                  <div ref={ref}>
+                    {inView && (
+                      <animated.p className={css.results__sum}>
+                        {number.to(n => '$' + n.toFixed(3))}
+                      </animated.p>
+                    )}
+                  </div>
+                )}
+              </InView>
               <Media
                 query="(min-width:1123px)"
                 render={() => (
@@ -45,13 +90,33 @@ const Results = () => {
           </div>
           <div className={css.results__last}>
             <div className={css.results__top}>
-              <p className={css.results__sum}>$1,318,367</p>
+              <InView>
+                {({ ref }) => (
+                  <div ref={ref}>
+                    {inView && (
+                      <animated.p className={css.results__sum}>
+                        {secondNumber.to(n => '$' + n.toFixed(3))}
+                      </animated.p>
+                    )}
+                  </div>
+                )}
+              </InView>
               <p className={css.results__text}>
                 Generated revenue by AI Solutions
               </p>
             </div>
             <div className={css.results__bottom}>
-              <p className={css.results__sum}>$4,403</p>
+              <InView>
+                {({ ref }) => (
+                  <div ref={ref}>
+                    {inView && (
+                      <animated.p className={css.results__sum}>
+                        {thirdNumber.to(n => '$' + n.toFixed(3))}
+                      </animated.p>
+                    )}
+                  </div>
+                )}
+              </InView>
               <p className={css.results__text}>
                 Human labor hour saved with the help of AI
               </p>

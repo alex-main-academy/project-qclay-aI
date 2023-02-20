@@ -18,6 +18,10 @@
     color: var(--black-text-color);
     margin-top: 225px;
 
+    span {
+        display: block;
+    }
+
     @media screen and (max-width:767px) {
         max-width: 180px;
         font-size: 16px;

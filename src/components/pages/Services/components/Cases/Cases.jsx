@@ -1,7 +1,46 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import css from './Cases.module.scss';
 import sprite from '../../images/sprite.svg';
 import handImage from '../../images/cases/image-hand.png';
+
+const leftAnimation = {
+  hidden: {
+    opacity: 0,
+    translateX: '-100%',
+    visibility: 'hidden',
+  },
+  visible: {
+    opacity: 1,
+    translateX: 0,
+    visibility: 'visible',
+    transition: { duration: 0.5 },
+  },
+};
+
+const rightAnimation = {
+  hidden: {
+    opacity: 0,
+    translateX: '100%',
+    visibility: 'hidden',
+  },
+  visible: {
+    opacity: 1,
+    translateX: 0,
+    visibility: 'visible',
+    transition: { duration: 0.5 },
+  },
+};
+
+const imageAnimation = {
+  hidden: {
+    y: '100%',
+  },
+  visible: {
+    y: 0,
+    transition: { delay: 0.5, duration: 0.5 },
+  },
+};
 
 const Cases = () => {
   return (
@@ -12,7 +51,12 @@ const Cases = () => {
         </h2>
         <div className={css.cases__border}></div>
         <ul className={css.cases__list}>
-          <li className={css.cases__item__first}>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            variants={leftAnimation}
+            className={css.cases__item__first}
+          >
             <p className={css.cases__data}>
               02 Jul 2020 <span></span> 5 min read
             </p>
@@ -20,8 +64,13 @@ const Cases = () => {
               Our Pricing Lorem ipsum dolor sit amet consec tetur.
             </h3>
             <Link className={css.cases__link}>New Case</Link>
-          </li>
-          <li className={css.cases__item__second}>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            variants={rightAnimation}
+            className={css.cases__item__second}
+          >
             <p className={css.cases__data}>
               02 Jul 2020 <span></span> 5 min read
             </p>
@@ -29,8 +78,13 @@ const Cases = () => {
               Our Pricing Lorem ipsum dolor sit amet consec tetur.
             </h3>
             <Link className={css.cases__link}>New Case</Link>
-          </li>
-          <li className={css.cases__item__third}>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            variants={leftAnimation}
+            className={css.cases__item__third}
+          >
             <p className={css.cases__data}>
               02 Jul 2020 <span></span> 5 min read
             </p>
@@ -38,8 +92,13 @@ const Cases = () => {
               Our Pricing Lorem ipsum dolor sit amet consec tetur.
             </h3>
             <Link className={css.cases__link}>New Case</Link>
-          </li>
-          <li className={css.cases__item__fourth}>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            variants={rightAnimation}
+            className={css.cases__item__fourth}
+          >
             <p className={css.cases__data}>
               Over 15 <span></span> Use Cases
             </p>
@@ -49,8 +108,15 @@ const Cases = () => {
                 <use href={sprite + '#icon-arrow-right'}></use>
               </svg>
             </Link>
-            <img src={handImage} alt="hand" className={css.cases__image} />
-          </li>
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              variants={imageAnimation}
+              src={handImage}
+              alt="hand"
+              className={css.cases__image}
+            />
+          </motion.li>
         </ul>
       </div>
     </section>

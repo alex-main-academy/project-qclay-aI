@@ -1,5 +1,16 @@
+import { motion } from 'framer-motion';
 import Media from 'react-media';
 import css from './Price.module.scss';
+
+const borderAnimation = {
+  hidden: {
+    x: '-30%',
+  },
+  visible: {
+    x: 0,
+    transition: { duration: 0.5 },
+  },
+};
 
 const Price = () => {
   return (
@@ -8,7 +19,12 @@ const Price = () => {
         <h2 className={css.price__title}>
           Our <span>Pricing</span> Lorem ipsum dolor sit
         </h2>
-        <div className={css.price__border}></div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={borderAnimation}
+          className={css.price__border}
+        ></motion.div>
         <ul className={css.price__list}>
           <li className={css.price__card}>
             <p className={css.card__sharp}>#1</p>

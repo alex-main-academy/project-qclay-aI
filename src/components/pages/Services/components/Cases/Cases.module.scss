@@ -1,5 +1,6 @@
 .cases {
     padding: 107px 0;
+    overflow: hidden;
 
     @media screen and (max-width:767px) {
         padding: 97px 0 57px 0;
@@ -75,6 +76,7 @@
 .cases__item__fourth {
     background-color: #00B582;
     position: relative;
+    overflow: hidden;
 
     .cases__data {
         color: #00000099;
