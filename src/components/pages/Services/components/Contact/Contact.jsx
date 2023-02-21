@@ -68,7 +68,7 @@ const Contact = () => {
           variants={titleAnimation}
           className={css.contact__title}
         >
-          Cont<span>act</span> Us
+          Cont<span>act</span> <span>Us</span>
         </motion.h2>
         <motion.div
           initial="hidden"
