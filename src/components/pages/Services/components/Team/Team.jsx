@@ -7,6 +7,7 @@ import bigCircleImage from '../../images/team/big-circle.png';
 import smallCircleImage from '../../images/team/small-circle.png';
 import lineImage from '../../images/team/line.png';
 import sprite from '../../images/sprite.svg';
+import Media from 'react-media';
 
 const borderAnimation = {
   hidden: {
@@ -48,6 +49,18 @@ const lineAnimation = {
   visible: {
     left: '491px',
     top: '196px',
+    transition: { duration: 0.5 },
+  },
+};
+
+const mobileLineAnimation = {
+  hidden: {
+    left: '300px',
+    top: '190px',
+  },
+  visible: {
+    left: '143px',
+    top: '90px',
     transition: { duration: 0.5 },
   },
 };
@@ -133,13 +146,31 @@ const Team = () => {
           alt="decor"
           className={css.team__circle__small}
         />
-        <motion.img
-          initial="hidden"
-          whileInView="visible"
-          variants={lineAnimation}
-          src={lineImage}
-          alt="decor"
-          className={css.team__line}
+        <Media
+          query="(min-width:768px)"
+          render={() => (
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              variants={lineAnimation}
+              src={lineImage}
+              alt="decor"
+              className={css.team__line}
+            />
+          )}
+        />
+        <Media
+          query="(max-width:767px)"
+          render={() => (
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              variants={mobileLineAnimation}
+              src={lineImage}
+              alt="decor"
+              className={css.team__line}
+            />
+          )}
         />
       </div>
     </section>

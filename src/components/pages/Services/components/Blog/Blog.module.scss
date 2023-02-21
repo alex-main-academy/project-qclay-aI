@@ -23,6 +23,31 @@
 
     top: 50%;
     left: -35px;
+
+    @media screen and (max-width:1480px) {
+        font-size: 80px;
+        top: 52%;
+        left: -30px;
+    }
+
+    @media screen and (max-width:1300px) {
+        font-size: 70px;
+        top: 53%;
+        left: -30px;
+    }
+
+
+    @media screen and (max-width:1123px) {
+        font-size: 80px;
+        top: 52%;
+        left: -30px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        top: 57%;
+        left: -17px;
+    }
 }
 
 .blog__item {
