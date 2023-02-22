@@ -17,7 +17,7 @@ import Team from './components/Team/Team';
 const Services = () => {
   return (
     <>
-      <main>
+      <main animationTime={2000}>
         <Hero />
         <Science />
         <Service />

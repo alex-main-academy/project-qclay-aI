@@ -37,6 +37,16 @@ const borderAnimation = {
   },
 };
 
+const linksAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: custom => ({
+    opacity: 1,
+    transition: { duration: 0.5, delay: custom * 0.1 },
+  }),
+};
+
 const Science = () => {
   return (
     <section className={css.science}>
@@ -93,34 +103,57 @@ const Science = () => {
           />
           <div>
             <ul className={css.science__list}>
-              <li className={css.science__item}>
+              <motion.li
+                initial="hidden"
+                whileInView="visible"
+                variants={linksAnimation}
+                className={css.science__item}
+              >
                 <Link className={css.science__link}>
                   <svg width="51" height="51" className={css.science__icon}>
                     <use href={sprite + '#icon-linkedin'}></use>
                   </svg>
                 </Link>
-              </li>
-              <li className={css.science__item}>
+              </motion.li>
+              <motion.li
+                initial="hidden"
+                whileInView="visible"
+                variants={linksAnimation}
+                custom={1}
+                className={css.science__item}
+              >
                 <Link className={css.science__link}>
                   <svg width="51" height="51" className={css.science__icon}>
                     <use href={sprite + '#icon-instagram'}></use>
                   </svg>
                 </Link>
-              </li>
-              <li className={css.science__item}>
+              </motion.li>
+              <motion.li
+                initial="hidden"
+                whileInView="visible"
+                variants={linksAnimation}
+                custom={2}
+                className={css.science__item}
+              >
                 <Link className={css.science__link}>
                   <svg width="51" height="51" className={css.science__icon}>
                     <use href={sprite + '#icon-twitter'}></use>
                   </svg>
                 </Link>
-              </li>
-              <li className={css.science__item}>
+              </motion.li>
+              <motion.li
+                initial="hidden"
+                whileInView="visible"
+                variants={linksAnimation}
+                custom={3}
+                className={css.science__item}
+              >
                 <Link className={css.science__link}>
                   <svg width="51" height="51" className={css.science__icon}>
                     <use href={sprite + '#icon-youtube'}></use>
                   </svg>
                 </Link>
-              </li>
+              </motion.li>
             </ul>
             <p className={css.science__text}>
               We create astounding products powered by Machine Learning and Data

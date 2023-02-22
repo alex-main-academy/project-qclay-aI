@@ -1,9 +1,9 @@
 .service {
-    padding: 38.5px 0 95px 0;
+    padding: 38.5px 0 0 0;
     background-color: #FFFFFF;
 
     @media screen and (max-width:767px) {
-        padding: 43px 0 59px 0;
+        padding: 43px 0 0 0;
     }
 }
 
@@ -66,9 +66,14 @@
 }
 
 .service__list {
+    align-self: flex-end;
     position: relative;
     height: 290px;
     width: 690px;
+
+    @media screen and (max-width:1123px) {
+        align-self: flex-start;
+    }
 
     @media screen and (max-width:767px) {
         width: 100%;
@@ -78,9 +83,14 @@
 
 .features {
     width: calc(100% - 728px);
+    padding-bottom: 95px;
 
     @media screen and (max-width:1123px) {
         width: 100%;
+    }
+
+    @media screen and (max-width:767px) {
+        padding-bottom: 0;
     }
 }
 
@@ -183,10 +193,8 @@
         }
 
         &:nth-child(6) {
-            padding: 13px 0;
-            font-size: 13px;
             position: absolute;
-            left: 253px;
+            left: 200px;
             top: 92px;
             transform: rotate(21.06deg);
         }
@@ -203,21 +211,27 @@
         font-size: 12px;
 
         &:nth-child(1) {
-            left: 0;
-            top: 50px;
-            transform: rotate(7.09deg);
+            left: 60px;
+            top: 65px;
         }
 
         &:nth-child(2) {
             position: absolute;
-            top: 100px;
+            top: 103px;
+            left: 18px;
             transform: rotate(-21.89deg);
+        }
+
+        &:nth-child(3) {
+            position: absolute;
+            top: 142px;
+            left: 56.5px;
         }
 
         &:nth-child(4) {
             position: absolute;
-            top: 81px;
-            left: 110px;
+            top: 94px;
+            left: 115px;
             transform: rotate(-22.9deg);
         }
 
@@ -231,19 +245,19 @@
         &:nth-child(6) {
             padding: 9px;
             font-size: 12px;
-            left: 203px;
-            top: 106px;
+            left: 175px;
+            top: 129px;
         }
 
         &:nth-child(7) {
             padding: 9px;
             left: 207px;
+            top: 137px;
         }
     }
 }
 
 // features
-
 
 .features__item {
     font-family: 'Neue Machina';
