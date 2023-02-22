@@ -64,8 +64,18 @@
     color: var(--white-text-color);
     transition-duration: 700ms;
 
+    .industry__button {
+        width: 100%;
+        transition-duration: 700ms;
+        text-align: left;
+        color: var(--white-text-color);
+        background-color: transparent;
+    }
+
     &:hover {
-        color: #00B582;
+        .industry__button {
+            color: #00B582;
+        }
 
         h3 {
             svg {
@@ -86,7 +96,7 @@
         padding: 0;
         position: relative;
 
-        &:hover {
+        .industry__button:focus {
             padding-bottom: 63.5px;
 
             .text__mobile {
@@ -201,7 +211,7 @@
     padding-left: 23px;
     padding-right: 38px;
     opacity: 0;
-    transition-duration: 800ms;
+    transition-duration: 700ms;
 }
 
 .mobile__title {
@@ -209,6 +219,7 @@
     font-size: 0;
     line-height: 1;
     color: var(--white-text-color);
+    transition-duration: 700ms;
     margin-top: 0;
 }
 
@@ -217,4 +228,5 @@
     line-height: 1.24;
     text-transform: capitalize;
     color: var(--white-text-color);
+    transition-duration: 700ms;
 }
