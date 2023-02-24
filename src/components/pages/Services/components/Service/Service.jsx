@@ -1,22 +1,18 @@
+import { useCallback, useEffect, useState } from 'react';
+import { nanoid } from 'nanoid';
+import { useInView } from 'react-intersection-observer';
 import css from './Service.module.scss';
 import sprite from '../../images/sprite.svg';
 import Matter from 'matter-js';
-import { nanoid } from 'nanoid';
-import { useEffect, useState } from 'react';
 
 const Service = () => {
-  // const [view, setView] = useState(true);
   const [section, setSection] = useState(null);
 
-  useEffect(() => {
-    setSection(document.querySelector('.service'));
-  }, []);
-
-  useEffect(() => {
-    renderCanvas();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
   });
 
-  const renderCanvas = () => {
+  const renderCanvas = useCallback(() => {
     const Engine = Matter.Engine;
     const Render = Matter.Render;
     const World = Matter.Composite;
@@ -134,7 +130,20 @@ const Service = () => {
       Matter.Engine.update(engine);
       requestAnimationFrame(rerender);
     })();
-  };
+  }, [section]);
+
+  useEffect(() => {
+    if (inView) {
+      renderCanvas();
+      return;
+    } else {
+      return;
+    }
+  }, [inView, renderCanvas]);
+
+  useEffect(() => {
+    setSection(document.querySelector('.service'));
+  }, []);
 
   const itemsArray = [
     'Knowledge Graph',
@@ -147,7 +156,7 @@ const Service = () => {
   ];
 
   return (
-    <section className="service">
+    <section ref={ref} className="service">
       <div className="container">
         <h2 className={css.service__title}>
           Services
