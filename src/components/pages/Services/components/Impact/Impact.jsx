@@ -2,12 +2,10 @@ import { motion } from 'framer-motion';
 import Media from 'react-media';
 import css from './Impact.module.scss';
 import tennisVideo from '../../video/tennis.mp4';
+import tennisMobileVideo from '../../video/tennis-mob.mp4';
 
 const textAnimation = {
-  visible: {
-    color: 'transparent',
-    transition: { delay: 1.3 },
-  },
+  visible: {},
 };
 
 const Impact = () => {
@@ -29,13 +27,20 @@ const Impact = () => {
           The impact of AI on the world is far-reaching and profound, changing
           the way we live, work, and interact.
         </motion.h2>
-        <Media
-          query="(max-width:767px)"
-          render={() => <div className={css.impact__border}></div>}
-        />
         <video autoPlay muted loop className={css.impact__video}>
           <source src={tennisVideo} />
         </video>
+        <Media
+          query="(max-width:767px)"
+          render={() => (
+            <>
+              <div className={css.impact__border}></div>
+              <video autoPlay muted loop className={css.impact__video}>
+                <source src={tennisMobileVideo} />
+              </video>
+            </>
+          )}
+        />
         <motion.p
           whileInView="visible"
           variants={textAnimation}
