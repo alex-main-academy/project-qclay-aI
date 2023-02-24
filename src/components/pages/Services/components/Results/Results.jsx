@@ -40,91 +40,93 @@ const Results = () => {
   });
 
   return (
-    <section className={css.results}>
-      <div className="container">
-        <div className={css.results__block}>
-          <div className={css.results__beneficial}>
-            <h2 className={css.results__title}>
-              <span>Beneficial</span> results of AI in Business
-            </h2>
-            <img
-              src={cricleImage}
-              alt="circle"
-              width="471"
-              className={css.results__circle}
-            />
-          </div>
-          <div className={css.results__saved}>
-            <div>
-              <InView onChange={setInView}>
-                {({ ref }) => (
-                  <div ref={ref}>
-                    {inView && (
-                      <animated.p className={css.results__sum}>
-                        {number.to(n => '$' + n.toFixed(3))}
-                      </animated.p>
-                    )}
-                  </div>
-                )}
-              </InView>
+    <InView onChange={setInView}>
+      <section className={css.results}>
+        <div className="container">
+          <div className={css.results__block}>
+            <div className={css.results__beneficial}>
+              <h2 className={css.results__title}>
+                <span>Beneficial</span> results of AI in Business
+              </h2>
+              <img
+                src={cricleImage}
+                alt="circle"
+                width="471"
+                className={css.results__circle}
+              />
+            </div>
+            <div className={css.results__saved}>
+              <div>
+                <InView>
+                  {({ ref }) => (
+                    <div ref={ref}>
+                      {inView && (
+                        <animated.p className={css.results__sum}>
+                          {number.to(n => '$' + n.toFixed(3))}
+                        </animated.p>
+                      )}
+                    </div>
+                  )}
+                </InView>
+                <Media
+                  query="(min-width:1123px)"
+                  render={() => (
+                    <video autoPlay muted loop className={css.results__laptop}>
+                      <source src={laptopVideo} />
+                    </video>
+                  )}
+                />
+                <p className={css.results__text}>
+                  Saved operational costs due to AI
+                </p>
+              </div>
               <Media
-                query="(min-width:1123px)"
+                query="(max-width:1123px)"
                 render={() => (
                   <video autoPlay muted loop className={css.results__laptop}>
                     <source src={laptopVideo} />
                   </video>
                 )}
               />
-              <p className={css.results__text}>
-                Saved operational costs due to AI
-              </p>
             </div>
-            <Media
-              query="(max-width:1123px)"
-              render={() => (
-                <video autoPlay muted loop className={css.results__laptop}>
-                  <source src={laptopVideo} />
-                </video>
-              )}
-            />
-          </div>
-          <div className={css.results__last}>
-            <div className={css.results__top}>
-              <InView>
-                {({ ref }) => (
-                  <div ref={ref}>
-                    {inView && (
-                      <animated.p className={css.results__sum}>
-                        {secondNumber.to(n => '$' + n.toFixed(3))}
-                      </animated.p>
-                    )}
-                  </div>
-                )}
-              </InView>
-              <p className={css.results__text}>
-                Generated revenue by AI Solutions
-              </p>
-            </div>
-            <div className={css.results__bottom}>
-              <InView>
-                {({ ref }) => (
-                  <div ref={ref}>
-                    {inView && (
-                      <animated.p className={css.results__sum}>
-                        {thirdNumber.to(n => '$' + n.toFixed(3))}
-                      </animated.p>
-                    )}
-                  </div>
-                )}
-              </InView>
-              <p className={css.results__text}>
-                Human labor hour saved with the help of AI
-              </p>
+            <div className={css.results__last}>
+              <div className={css.results__top}>
+                <InView>
+                  {({ ref }) => (
+                    <div ref={ref}>
+                      {inView && (
+                        <animated.p className={css.results__sum}>
+                          {secondNumber.to(n => '$' + n.toFixed(3))}
+                        </animated.p>
+                      )}
+                    </div>
+                  )}
+                </InView>
+                <p className={css.results__text}>
+                  Generated revenue by AI Solutions
+                </p>
+              </div>
+              <div className={css.results__bottom}>
+                <InView>
+                  {({ ref }) => (
+                    <div ref={ref}>
+                      {inView && (
+                        <animated.p className={css.results__sum}>
+                          {thirdNumber.to(n => '$' + n.toFixed(3))}
+                        </animated.p>
+                      )}
+                    </div>
+                  )}
+                </InView>
+                <p className={css.results__text}>
+                  Human labor hour saved with the help of AI
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </InView>
   );
 };
 
