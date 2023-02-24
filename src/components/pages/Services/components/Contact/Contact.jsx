@@ -58,6 +58,16 @@ const mobileCardAnimation = {
   },
 };
 
+const hoverEffectAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  hover: {
+    scaleX: [1.1, 1.05],
+    transition: { duration: 0.5 },
+  },
+};
+
 const Contact = () => {
   return (
     <section className={css.contact}>
@@ -120,7 +130,15 @@ const Contact = () => {
             />
           </label>
           <div className={css.form__buttons}>
-            <button className={css.form__send}>Send Message</button>
+            <motion.button
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.form__send}
+            >
+              <span className={css.black__span}>Send Message</span>
+              <span className={css.white__span}>Send Message</span>
+            </motion.button>
             <button className={css.form__icon}>
               <svg width="29" height="20">
                 <use href={sprite + '#icon-arrow-right'}></use>

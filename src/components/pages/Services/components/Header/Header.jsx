@@ -1,8 +1,19 @@
-import Media from 'react-media';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import Media from 'react-media';
 import css from './Header.module.scss';
 import logo from '../../images/header/logo.png';
 import sprite from '../../images/sprite.svg';
+
+const hoverEffectAnimation = {
+  initial: {
+    width: 203,
+  },
+  hover: {
+    width: [220, 210],
+    transition: { duration: 0.5 },
+  },
+};
 
 const Header = () => {
   return (
@@ -31,9 +42,18 @@ const Header = () => {
                     <Link className={css.navigation__link}>Contacts</Link>
                   </li>
                 </ul>
-                <button type="button" className={css.header__quote}>
-                  Get Quote
-                </button>
+                <div className={css.header__button}>
+                  <motion.button
+                    initial="initial"
+                    whileHover="hover"
+                    variants={hoverEffectAnimation}
+                    type="button"
+                    className={css.header__quote}
+                  >
+                    <span className={css.white__span}>Get Quote</span>
+                    <span className={css.black__span}>Get Quote</span>
+                  </motion.button>
+                </div>
               </>
             )}
           />

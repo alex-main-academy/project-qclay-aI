@@ -55,10 +55,6 @@
     display: inline-block;
     height: 74px;
     width: 204.7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     border: 1.4px solid #FFFFFF;
     border-radius: 56px;
 
@@ -66,6 +62,40 @@
     font-size: 18px;
     line-height: 1.4;
     color: var(--white-text-color);
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .black__span {
+        transition-duration: 500ms;
+    }
+
+    .white__span {
+        transition-duration: 500ms;
+        background-color: #FFFFFF;
+        color: var(--black-text-color);
+        border-radius: 50%;
+    }
+
+    &:hover {
+        .black__span {
+            transform: translate(0, -100%);
+        }
+
+        .white__span {
+            transform: translate(0, -100%);
+            border-radius: 0;
+        }
+    }
 
     @media screen and (max-width:767px) {
         width: 158.5px;
@@ -82,6 +112,7 @@
     align-items: center;
 
     background-color: #FFFFFF;
+    color: var(--black-text-color);
     border-radius: 56px;
 
     @media screen and (max-width:767px) {

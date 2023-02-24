@@ -65,6 +65,16 @@ const mobileLineAnimation = {
   },
 };
 
+const hoverEffectAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  hover: {
+    scaleX: [1.1, 1.05],
+    transition: { duration: 0.5 },
+  },
+};
+
 const Team = () => {
   return (
     <section className={css.team}>
@@ -125,16 +135,42 @@ const Team = () => {
           </div>
         </div>
         <div className={css.team__buttons}>
-          <button className={css.team__button__black} type="button">
-            <svg width="29" height="20">
-              <use href={sprite + '#icon-arrow-right'}></use>
-            </svg>
-          </button>
-          <button className={css.team__button__white} type="button">
-            <svg width="29" height="20">
-              <use href={sprite + '#icon-arrow-right'}></use>
-            </svg>
-          </button>
+          <motion.button
+            initial="initial"
+            whileHover="hover"
+            variants={hoverEffectAnimation}
+            className={css.team__button__black}
+            type="button"
+          >
+            <span className={css.black__span}>
+              <svg width="29" height="20">
+                <use href={sprite + '#icon-arrow-right'}></use>
+              </svg>
+            </span>
+            <span className={css.white__span}>
+              <svg width="29" height="20">
+                <use href={sprite + '#icon-arrow-right'}></use>
+              </svg>
+            </span>
+          </motion.button>
+          <motion.button
+            initial="initial"
+            whileHover="hover"
+            variants={hoverEffectAnimation}
+            className={css.team__button__white}
+            type="button"
+          >
+            <span className={css.white__span}>
+              <svg width="29" height="20">
+                <use href={sprite + '#icon-arrow-right'}></use>
+              </svg>
+            </span>
+            <span className={css.black__span}>
+              <svg width="29" height="20">
+                <use href={sprite + '#icon-arrow-right'}></use>
+              </svg>
+            </span>
+          </motion.button>
         </div>
         <img
           src={bigCircleImage}

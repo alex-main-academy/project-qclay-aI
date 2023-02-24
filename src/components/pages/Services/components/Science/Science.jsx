@@ -47,6 +47,16 @@ const linksAnimation = {
   }),
 };
 
+const hoverEffectAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  hover: {
+    scaleX: [1.1, 1.05],
+    transition: { duration: 0.5 },
+  },
+};
+
 const Science = () => {
   return (
     <section className={css.science}>
@@ -74,7 +84,15 @@ const Science = () => {
             variants={textAnimation}
             className={css.science__contact}
           >
-            <Link className={css.science__contact__link}>Contact Us</Link>
+            <motion.a
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.science__contact__link}
+            >
+              <span className={css.black__span}>Contact Us</span>
+              <span className={css.white__span}>Contact Us</span>
+            </motion.a>
             <Link className={css.science__contact__arrow}>
               <svg width="29" height="20">
                 <use href={sprite + '#icon-arrow-right'}></use>

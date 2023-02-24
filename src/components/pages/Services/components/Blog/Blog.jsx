@@ -28,6 +28,16 @@ const backgroundAnimation = {
   },
 };
 
+const hoverEffectAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  hover: {
+    scaleX: [1.1, 1.05],
+    transition: { duration: 0.5 },
+  },
+};
+
 const Blog = () => {
   return (
     <section className={css.blog}>
@@ -41,16 +51,42 @@ const Blog = () => {
             className={css.blog__lottie}
           ></Player>
           <div className={css.blog__buttons}>
-            <button type="button" className={css.blog__button__black}>
-              <svg width="29" height="20">
-                <use href={sprite + '#icon-arrow-right'}></use>
-              </svg>
-            </button>
-            <button type="button" className={css.blog__button__white}>
-              <svg width="29" height="20">
-                <use href={sprite + '#icon-arrow-right'}></use>
-              </svg>
-            </button>
+            <motion.button
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              type="button"
+              className={css.blog__button__black}
+            >
+              <span className={css.black__span}>
+                <svg width="29" height="20">
+                  <use href={sprite + '#icon-arrow-right'}></use>
+                </svg>
+              </span>
+              <span className={css.white__span}>
+                <svg width="29" height="20">
+                  <use href={sprite + '#icon-arrow-right'}></use>
+                </svg>
+              </span>
+            </motion.button>
+            <motion.button
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              type="button"
+              className={css.blog__button__white}
+            >
+              <span className={css.white__span}>
+                <svg width="29" height="20">
+                  <use href={sprite + '#icon-arrow-right'}></use>
+                </svg>
+              </span>
+              <span className={css.black__span}>
+                <svg width="29" height="20">
+                  <use href={sprite + '#icon-arrow-right'}></use>
+                </svg>
+              </span>
+            </motion.button>
           </div>
         </li>
         <li className={css.blog__item}>

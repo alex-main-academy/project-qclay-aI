@@ -42,6 +42,16 @@ const imageAnimation = {
   },
 };
 
+const hoverEffectAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  hover: {
+    scaleX: [1.1, 1.05],
+    transition: { duration: 0.5 },
+  },
+};
+
 const Cases = () => {
   return (
     <section className={css.cases}>
@@ -103,11 +113,23 @@ const Cases = () => {
               Over 15 <span></span> Use Cases
             </p>
             <h3 className={css.cases__subtitle}>See All Use Cases</h3>
-            <Link className={css.cases__link}>
-              <svg width="29" height="20">
-                <use href={sprite + '#icon-arrow-right'}></use>
-              </svg>
-            </Link>
+            <motion.a
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.cases__link}
+            >
+              <span className={css.black__span}>
+                <svg width="29" height="20">
+                  <use href={sprite + '#icon-arrow-right'}></use>
+                </svg>
+              </span>
+              <span className={css.white__span}>
+                <svg width="29" height="20">
+                  <use href={sprite + '#icon-arrow-right'}></use>
+                </svg>
+              </span>
+            </motion.a>
             <motion.img
               initial="hidden"
               whileInView="visible"

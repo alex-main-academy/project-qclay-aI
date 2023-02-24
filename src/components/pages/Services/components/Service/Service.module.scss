@@ -49,6 +49,7 @@
 }
 
 .service__block {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 38px;
@@ -84,6 +85,7 @@
 .features {
     width: calc(100% - 728px);
     padding-bottom: 95px;
+    margin-left: auto;
 
     @media screen and (max-width:1123px) {
         width: 100%;

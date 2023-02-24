@@ -1,8 +1,20 @@
+import { motion } from 'framer-motion';
+import { Player } from '@lottiefiles/react-lottie-player';
 import { Link } from 'react-router-dom';
 import css from './Process.module.scss';
 import sprite from '../../images/sprite.svg';
-import circleFigureImage from '../../images/process/circle-figure.svg';
+import circleLottie from '../../lotties/loop_elipsses_ai.json';
 import Media from 'react-media';
+
+const hoverEffectAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  hover: {
+    scaleX: [1.1, 1.05],
+    transition: { duration: 0.5 },
+  },
+};
 
 const Process = () => {
   return (
@@ -16,12 +28,12 @@ const Process = () => {
         <p className={css.process__roadmap}>Roadmap</p>
         <ul className={css.process__list}>
           <li className={css.process__roadmap__item}>
-            <img
-              src={circleFigureImage}
-              alt="figure"
-              width="151"
-              className={css.process__figure}
-            />
+            <Player
+              src={circleLottie}
+              autoplay
+              loop
+              className={css.process__lottie}
+            ></Player>
             <span></span>
           </li>
           <li className={css.process__item}>
@@ -157,7 +169,15 @@ const Process = () => {
             project team.
           </p>
           <div className={css.process__contact}>
-            <Link className={css.process__contact__link}>Contact Us</Link>
+            <motion.a
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.process__contact__link}
+            >
+              <span className={css.white__span}>Contact Us</span>
+              <span className={css.black__span}>Contact Us</span>
+            </motion.a>
             <Link className={css.process__contact__icon}>
               <svg width="29" height="20">
                 <use href={sprite + '#icon-arrow-right'}></use>
