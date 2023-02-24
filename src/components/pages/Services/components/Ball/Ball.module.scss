@@ -1,9 +1,18 @@
-.ball__image {
-    display: block;
-    width: 100%;
+.ball {
+    position: relative;
+    overflow: hidden;
     height: 100vh;
 }
 
 .ball__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
+
+    @media screen and (max-width:1480px) {
+        width: auto;
+        height: 100%;
+    }
 }
