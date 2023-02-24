@@ -8,15 +8,13 @@ const Service = () => {
   // const [view, setView] = useState(true);
   const [section, setSection] = useState(null);
 
-  const itemsArray = [
-    'Knowledge Graph',
-    'Predictive Modeling',
-    'Neural Network',
-    'NLP',
-    'Cognitive Computing',
-    'Deep Learning',
-    'Big Data Analysis',
-  ];
+  useEffect(() => {
+    setSection(document.querySelector('.service'));
+  }, []);
+
+  useEffect(() => {
+    renderCanvas();
+  });
 
   const renderCanvas = () => {
     const Engine = Matter.Engine;
@@ -80,16 +78,24 @@ const Service = () => {
       const height = elemRef.offsetHeight;
 
       return {
-        body: Matter.Bodies.rectangle(130, 0, width, height, {
-          render: {
-            fillStyle: 'transparent',
-          },
-        }),
+        body: Matter.Bodies.rectangle(
+          document.body.clientWidth > 1123 ? 130 : 80,
+          0,
+          width,
+          height,
+          {
+            render: {
+              fillStyle: 'transparent',
+            },
+          }
+        ),
         elem: elemRef,
         render() {
           const { x, y } = this.body.position;
 
-          this.elem.style.top = `${y - 12}px`;
+          this.elem.style.top = `${
+            document.body.clientWidth > 1565 ? y - 80 : y - 12
+          }px`;
           this.elem.style.left = `${x - width / 2}px`;
           this.elem.style.transform = `rotate(${this.body.angle}rad)`;
         },
@@ -130,13 +136,15 @@ const Service = () => {
     })();
   };
 
-  useEffect(() => {
-    setSection(document.querySelector('.service'));
-  }, []);
-
-  useEffect(() => {
-    renderCanvas();
-  });
+  const itemsArray = [
+    'Knowledge Graph',
+    'Predictive Modeling',
+    'Neural Network',
+    'NLP',
+    'Cognitive Computing',
+    'Deep Learning',
+    'Big Data Analysis',
+  ];
 
   return (
     <section className="service">

@@ -23,6 +23,16 @@ const textAnimation = {
   },
 };
 
+const parAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1 },
+  },
+};
+
 const Identify = () => {
   return (
     <section className={css.identify}>
@@ -51,15 +61,25 @@ const Identify = () => {
           variants={borderAnimation}
           className={css.identify__border}
         ></motion.div>
-        <p className={css.identify__text}>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          variants={parAnimation}
+          className={css.identify__text}
+        >
           During the discovery call with a client, we provide a free AI
-          consulting session on a client’s tech challenges.{' '}
-        </p>
-        <p className={css.identify__text}>
+          consulting session on a client’s tech challenges.
+        </motion.p>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          variants={parAnimation}
+          className={css.identify__text}
+        >
           We develop a detailed roadmap which includes not only transparent
           pricing but also project stages, delivery timeline, and team
           breakdown.
-        </p>
+        </motion.p>
       </div>
     </section>
   );
