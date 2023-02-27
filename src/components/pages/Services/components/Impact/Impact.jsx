@@ -51,10 +51,10 @@ const Impact = () => {
       });
     } else if (document.body.clientWidth < 767) {
       setScreen({
-        top: 50,
+        top: 0,
         firstTimer: 2500,
         secondTimer: 4500,
-        minusTop: 228,
+        minusTop: 178,
       });
     }
   }, []);
