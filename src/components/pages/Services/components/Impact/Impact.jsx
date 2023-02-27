@@ -80,6 +80,7 @@ const Impact = () => {
         window.scrollBy({ behavior: 'smooth', top: window.innerHeight });
       }, screen.secondTimer);
     } else {
+      document.body.style.overflow = 'visible';
       setIsRender(false);
     }
   }, [inView, isVisibleSelector, screen]);
