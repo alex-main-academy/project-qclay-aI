@@ -9,7 +9,7 @@ const Service = () => {
   const [section, setSection] = useState(null);
 
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
   });
 
   const renderCanvas = useCallback(() => {

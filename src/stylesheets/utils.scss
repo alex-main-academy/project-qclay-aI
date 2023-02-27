@@ -150,3 +150,26 @@ p {
         top: 0;
     }
 }
+
+// impact global styles
+.impact {
+    padding: 130px 0 224px 0;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width:1123px) {
+        padding: 100px 0 100px 0;
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 63px 0 70px 0;
+        background-position: center;
+    }
+}
+
+// ball global styles
+.ball {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}

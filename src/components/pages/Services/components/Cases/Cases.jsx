@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
 import css from './Cases.module.scss';
 import sprite from '../../images/sprite.svg';
 import handImage from '../../images/cases/image-hand.png';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { changeState } from 'redux/store';
 
 const leftAnimation = {
   hidden: {
@@ -53,8 +57,20 @@ const hoverEffectAnimation = {
 };
 
 const Cases = () => {
+  const dispatch = useDispatch();
+  const { ref, inView } = useInView({
+    root: null,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      dispatch(changeState(false));
+    }
+  }, [inView, dispatch]);
+
   return (
-    <section className={css.cases}>
+    <section ref={ref} className={css.cases}>
       <div className="container">
         <h2 className={css.cases__title}>
           <span>Use Cases</span> and Demo

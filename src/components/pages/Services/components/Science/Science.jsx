@@ -110,7 +110,6 @@ const Science = () => {
         <p className={css.science__year}>2023</p>
 
         <div className={css.science__bottom}>
-          {/* <Player src={logoLottie} autoplay /> */}
           <motion.img
             initial="hidden"
             whileInView="visible"

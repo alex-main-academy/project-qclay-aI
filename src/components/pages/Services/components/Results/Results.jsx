@@ -7,7 +7,7 @@ import cricleImage from '../../images/results/circle.png';
 import laptopVideo from '../../video/laptop.mp4';
 
 const Results = () => {
-  const [inView, setInView] = useState(false);
+  const [isInView, setIsInView] = useState(false);
 
   const { number } = useSpring({
     from: { number: 578.876 },
@@ -40,7 +40,7 @@ const Results = () => {
   });
 
   return (
-    <InView onChange={setInView}>
+    <InView onChange={setIsInView}>
       <section className={css.results}>
         <div className="container">
           <div className={css.results__block}>
@@ -60,7 +60,7 @@ const Results = () => {
                 <InView>
                   {({ ref }) => (
                     <div ref={ref}>
-                      {inView && (
+                      {isInView && (
                         <animated.p className={css.results__sum}>
                           {number.to(n => '$' + n.toFixed(3))}
                         </animated.p>
@@ -94,7 +94,7 @@ const Results = () => {
                 <InView>
                   {({ ref }) => (
                     <div ref={ref}>
-                      {inView && (
+                      {isInView && (
                         <animated.p className={css.results__sum}>
                           {secondNumber.to(n => '$' + n.toFixed(3))}
                         </animated.p>
@@ -110,7 +110,7 @@ const Results = () => {
                 <InView>
                   {({ ref }) => (
                     <div ref={ref}>
-                      {inView && (
+                      {isInView && (
                         <animated.p className={css.results__sum}>
                           {thirdNumber.to(n => '$' + n.toFixed(3))}
                         </animated.p>

@@ -93,11 +93,15 @@
     .results__sum {
         color: var(--accent-text-color);
         margin-bottom: 104px;
+        position: relative;
+        z-index: 2;
     }
 
     .results__text {
         max-width: 256px;
         margin-top: auto;
+        position: relative;
+        z-index: 2;
     }
 
     @media screen and (max-width:1123px) {
