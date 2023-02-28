@@ -38,9 +38,7 @@ const Impact = () => {
       setScreen({
         top: 80,
         plusTop: 250,
-        // firstTimer: 5000,
         secondTimer: 4000,
-        // minusTop: 80,
       });
     } else if (
       document.body.clientWidth < 1123 &&
@@ -49,17 +47,13 @@ const Impact = () => {
       setScreen({
         top: 0,
         plusTop: 0,
-        // firstTimer: 2000,
         secondTimer: 4000,
-        // minusTop: 190,
       });
     } else if (document.body.clientWidth < 767) {
       setScreen({
         top: 20,
         plusTop: 200,
-        // firstTimer: 2500,
         secondTimer: 4500,
-        // minusTop: 178,
       });
     }
   }, []);
@@ -73,13 +67,6 @@ const Impact = () => {
       scrollToElement(sectionElement, {
         offset: screen.top,
       });
-
-      // setTimeout(() => {
-      //   window.scrollBy({
-      //     behavior: 'smooth',
-      //     top: sectionElement.clientHeight - screen.minusTop,
-      //   });
-      // }, screen.firstTimer);
 
       setTimeout(() => {
         window.scrollBy({
