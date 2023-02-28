@@ -1,4 +1,4 @@
-import Ball from './components/Ball/Ball';
+// import Ball from './components/Ball/Ball';
 import Blog from './components/Blog/Blog';
 import Cases from './components/Cases/Cases';
 import Contact from './components/Contact/Contact';
@@ -26,7 +26,7 @@ const Services = () => {
         <Process />
         <Results />
         <Impact />
-        <Ball />
+        {/* <Ball /> */}
         <Cases />
         <Team />
         <Blog />

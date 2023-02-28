@@ -11,12 +11,14 @@ import tennisMobileVideo from '../../video/tennis-mob.mp4';
 const textAnimation = {
   hidden: {
     opacity: 1,
+    visibility: 'visible',
   },
   visible: {
     opacity: 0,
+    visibility: 'hidden',
     transition: {
-      delay: 1.4,
-      duration: document.body.clientWidth > 767 ? 1.4 : 2,
+      delay: document.body.clientWidth > 767 ? 1.4 : 2.4,
+      duration: 0.5,
     },
   },
 };
@@ -35,9 +37,10 @@ const Impact = () => {
     if (document.body.clientWidth > 1123) {
       setScreen({
         top: 80,
-        firstTimer: 2000,
+        plusTop: 250,
+        // firstTimer: 5000,
         secondTimer: 4000,
-        minusTop: 80,
+        // minusTop: 80,
       });
     } else if (
       document.body.clientWidth < 1123 &&
@@ -45,16 +48,18 @@ const Impact = () => {
     ) {
       setScreen({
         top: 0,
-        firstTimer: 2000,
+        plusTop: 0,
+        // firstTimer: 2000,
         secondTimer: 4000,
-        minusTop: 190,
+        // minusTop: 190,
       });
     } else if (document.body.clientWidth < 767) {
       setScreen({
-        top: 0,
-        firstTimer: 2500,
+        top: 20,
+        plusTop: 200,
+        // firstTimer: 2500,
         secondTimer: 4500,
-        minusTop: 178,
+        // minusTop: 178,
       });
     }
   }, []);
@@ -69,15 +74,18 @@ const Impact = () => {
         offset: screen.top,
       });
 
+      // setTimeout(() => {
+      //   window.scrollBy({
+      //     behavior: 'smooth',
+      //     top: sectionElement.clientHeight - screen.minusTop,
+      //   });
+      // }, screen.firstTimer);
+
       setTimeout(() => {
         window.scrollBy({
           behavior: 'smooth',
-          top: sectionElement.clientHeight - screen.minusTop,
+          top: window.innerHeight + screen.plusTop,
         });
-      }, screen.firstTimer);
-
-      setTimeout(() => {
-        window.scrollBy({ behavior: 'smooth', top: window.innerHeight });
       }, screen.secondTimer);
     } else {
       document.body.style.overflow = 'visible';
@@ -114,7 +122,12 @@ const Impact = () => {
           query="(max-width:767px)"
           render={() => (
             <>
-              <div className={css.impact__border}></div>
+              <motion.div
+                initial="hidden"
+                whileInView={isRender ? 'visible' : 'hidden'}
+                variants={textAnimation}
+                className={css.impact__border}
+              ></motion.div>
               {isRender && (
                 <video autoPlay muted loop className={css.impact__video}>
                   <source src={tennisMobileVideo} />

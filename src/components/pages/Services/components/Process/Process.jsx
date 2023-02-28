@@ -24,7 +24,7 @@ const Process = () => {
   const dispatch = useDispatch();
   const { ref, inView } = useInView({
     root: null,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   useEffect(() => {

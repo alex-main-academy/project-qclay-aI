@@ -8,7 +8,7 @@ const Ball = () => {
   const isVisibleSelector = useSelector(state => state.isElementVisible);
   const { ref, inView } = useInView({
     root: null,
-    threshold: 0.05,
+    threshold: 0.3,
   });
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Ball = () => {
   return (
     <section ref={ref} className="ball">
       {inView && (
-        <video autoPlay muted className={css.ball__video}>
+        <video autoPlay muted playsInline className={css.ball__video}>
           <source src={lampVideo} />
         </video>
       )}
