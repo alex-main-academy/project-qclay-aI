@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.0aa5e6e2.css",
-    "main.js": "/project-qclay-aI/static/js/main.ba22f13b.js",
+    "main.css": "/project-qclay-aI/static/css/main.8ae0c410.css",
+    "main.js": "/project-qclay-aI/static/js/main.1b111eb1.js",
     "static/media/hero-back-video.mp4": "/project-qclay-aI/static/media/hero-back-video.913a91150da70c1b9da0.mp4",
-    "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.8529b0a47a27c99454e7.mp4",
     "static/media/laptop.mp4": "/project-qclay-aI/static/media/laptop.423169ee7d5f3832489c.mp4",
-    "static/media/lamps.mp4": "/project-qclay-aI/static/media/lamps.ef648b39a5bf7a911357.mp4",
-    "static/media/tennis-mob.mp4": "/project-qclay-aI/static/media/tennis-mob.3b03bb809b981c96ce4f.mp4",
+    "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.539e85ad774a5b8bee62.mp4",
+    "static/media/tennis-mob.mp4": "/project-qclay-aI/static/media/tennis-mob.45e67ac4153611324a99.mp4",
     "static/media/background-2.png": "/project-qclay-aI/static/media/background-2.93b0717b6975eef785b8.png",
     "static/media/background-3.png": "/project-qclay-aI/static/media/background-3.70c70cb72234379eb908.png",
     "static/media/boy.png": "/project-qclay-aI/static/media/boy.61e3fd82d5bd7bbc160b.png",
@@ -37,11 +36,11 @@
     "static/media/line.png": "/project-qclay-aI/static/media/line.3e406dbc045aca61e45b.png",
     "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.0aa5e6e2.css.map": "/project-qclay-aI/static/css/main.0aa5e6e2.css.map",
-    "main.ba22f13b.js.map": "/project-qclay-aI/static/js/main.ba22f13b.js.map"
+    "main.8ae0c410.css.map": "/project-qclay-aI/static/css/main.8ae0c410.css.map",
+    "main.1b111eb1.js.map": "/project-qclay-aI/static/js/main.1b111eb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aa5e6e2.css",
-    "static/js/main.ba22f13b.js"
+    "static/css/main.8ae0c410.css",
+    "static/js/main.1b111eb1.js"
   ]
 }
