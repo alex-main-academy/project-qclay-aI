@@ -25,7 +25,7 @@ const Hero = () => {
     <motion.section initial="hidden" whileInView="visible" className={css.hero}>
       <div
         dangerouslySetInnerHTML={{
-          __html: `<video autoplay muted loop class="hero__video">
+          __html: `<video autoplay muted loop playsinline class="hero__video">
           <source src=${backVideo} type="video/mp4" />
           </video>`,
         }}
