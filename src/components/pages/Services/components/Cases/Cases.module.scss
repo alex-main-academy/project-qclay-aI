@@ -160,6 +160,12 @@
         @media screen and (max-width:767px) {
             width: 142.3px;
             height: 52.8px;
+
+            .white__span {
+                background-color: #000000;
+                color: var(--white-text-color);
+                border-radius: 50%;
+            }
         }
     }
 }
