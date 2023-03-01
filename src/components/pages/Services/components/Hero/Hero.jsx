@@ -18,7 +18,7 @@ const textAnimation = {
 const Hero = () => {
   return (
     <motion.section initial="hidden" whileInView="visible" className={css.hero}>
-      <video autoPlay muted loop className={css.hero__video}>
+      <video autoPlay muted loop playsInline className={css.hero__video}>
         <source src={backVideo} type="video/mp4" />
       </video>
       <Header />
