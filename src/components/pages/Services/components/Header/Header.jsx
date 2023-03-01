@@ -45,7 +45,9 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className={css.navigation__item}>
-                    <Link className={css.navigation__link}>Contacts</Link>
+                    <Link to="/case" className={css.navigation__link}>
+                      Contacts
+                    </Link>
                   </li>
                 </ul>
                 <div className={css.header__button}>

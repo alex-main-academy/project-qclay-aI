@@ -1,0 +1,76 @@
+.hero {
+    background-image: linear-gradient(to right, rgba(36, 188, 145, 0.5), rgba(36, 188, 145, 0.5)), url(../../images/caseHero/background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 460px;
+
+    padding-bottom: 42px;
+
+    @media screen and (max-width:767px) {
+        background-image: url(../../images/caseHero/background-modile.jpg);
+        background-size: 100% 524px;
+        padding-bottom: 26px;
+    }
+}
+
+.hero__title {
+    max-width: 1113px;
+    margin-top: 94px;
+    margin-bottom: 104px;
+
+    font-size: 80px;
+    line-height: 0.88;
+    text-transform: uppercase;
+    color: var(--black-text-color);
+
+    @media screen and (max-width:1123px) {
+        font-size: 65px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        line-height: 0.8;
+        max-width: 360px;
+        margin-top: 169px;
+        margin-bottom: 88px;
+    }
+}
+
+.hero__text__big {
+    max-width: 403px;
+    margin-bottom: 18px;
+
+    font-size: 27px;
+    text-transform: capitalize;
+    color: var(--white-text-color);
+
+    @media screen and (max-width:1123px) {
+        font-size: 23px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 20px;
+        line-height: 1.27;
+        margin-bottom: 101px;
+        max-width: 292px;
+    }
+}
+
+.hero__text__small {
+    max-width: 475px;
+    margin-left: auto;
+
+    font-size: 20px;
+    text-align: right;
+    text-transform: capitalize;
+    color: var(--white-text-color);
+
+    @media screen and (max-width:1123px) {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    @media screen and (max-width:767px) {
+        line-height: 1.27;
+        max-width: 180px;
+    }
+}
