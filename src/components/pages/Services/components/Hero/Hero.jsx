@@ -15,18 +15,28 @@ const textAnimation = {
   }),
 };
 
-const Hero = () => {
+const AutoplayVideo = () => {
   return (
-    <motion.section initial="hidden" whileInView="visible" className={css.hero}>
-      <video
-        autoPlay="autoplay"
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<video
+        autoPlay
         muted
         loop
         playsInline
-        className={css.hero__video}
+        class=${css.hero__video}
       >
-        <source src={backVideo} type="video/mp4" />
-      </video>
+        <source src=${backVideo} type="video/mp4" />
+      </video>`,
+      }}
+    ></div>
+  );
+};
+
+const Hero = () => {
+  return (
+    <motion.section initial="hidden" whileInView="visible" className={css.hero}>
+      <AutoplayVideo />
       <Header />
       <div className="container">
         <motion.p className={css.hero__text}>
