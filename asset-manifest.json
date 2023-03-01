@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project-qclay-aI/static/css/main.2e91716f.css",
-    "main.js": "/project-qclay-aI/static/js/main.be40c26e.js",
+    "main.js": "/project-qclay-aI/static/js/main.f4871fa1.js",
     "static/media/hero-back-video.mp4": "/project-qclay-aI/static/media/hero-back-video.913a91150da70c1b9da0.mp4",
     "static/media/laptop.mp4": "/project-qclay-aI/static/media/laptop.423169ee7d5f3832489c.mp4",
     "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.539e85ad774a5b8bee62.mp4",
@@ -41,10 +41,10 @@
     "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "index.html": "/project-qclay-aI/index.html",
     "main.2e91716f.css.map": "/project-qclay-aI/static/css/main.2e91716f.css.map",
-    "main.be40c26e.js.map": "/project-qclay-aI/static/js/main.be40c26e.js.map"
+    "main.f4871fa1.js.map": "/project-qclay-aI/static/js/main.f4871fa1.js.map"
   },
   "entrypoints": [
     "static/css/main.2e91716f.css",
-    "static/js/main.be40c26e.js"
+    "static/js/main.f4871fa1.js"
   ]
 }
