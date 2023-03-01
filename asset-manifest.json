@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.54dbbe1e.css",
-    "main.js": "/project-qclay-aI/static/js/main.1b111eb1.js",
+    "main.css": "/project-qclay-aI/static/css/main.71d22be8.css",
+    "main.js": "/project-qclay-aI/static/js/main.bd4654f9.js",
     "static/media/hero-back-video.mp4": "/project-qclay-aI/static/media/hero-back-video.913a91150da70c1b9da0.mp4",
     "static/media/laptop.mp4": "/project-qclay-aI/static/media/laptop.423169ee7d5f3832489c.mp4",
     "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.539e85ad774a5b8bee62.mp4",
     "static/media/tennis-mob.mp4": "/project-qclay-aI/static/media/tennis-mob.45e67ac4153611324a99.mp4",
     "static/media/background-2.png": "/project-qclay-aI/static/media/background-2.93b0717b6975eef785b8.png",
+    "static/media/background-4.png": "/project-qclay-aI/static/media/background-4.1b8325f8d0c045094efd.png",
     "static/media/background-3.png": "/project-qclay-aI/static/media/background-3.70c70cb72234379eb908.png",
+    "static/media/background-desktop.jpg": "/project-qclay-aI/static/media/background-desktop.9cb2549454e88b1580f5.jpg",
     "static/media/boy.png": "/project-qclay-aI/static/media/boy.61e3fd82d5bd7bbc160b.png",
     "static/media/girl.png": "/project-qclay-aI/static/media/girl.085fb588b254d14c7ddb.png",
     "static/media/Robtronika-Regular.ttf": "/project-qclay-aI/static/media/Robtronika-Regular.3a5bff6562eea11669e5.ttf",
-    "static/media/background-4.png": "/project-qclay-aI/static/media/background-4.0b618f3c8d3838b9e1c7.png",
+    "static/media/background-1.png": "/project-qclay-aI/static/media/background-1.0254c5b382ebe3974cf9.png",
     "static/media/background.png": "/project-qclay-aI/static/media/background.bd6c132c14ee1429c5de.png",
     "static/media/WhyteInktrap-Medium.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Medium.f23655ec1c93691ae10c.ttf",
     "static/media/WhyteInktrap-Book.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Book.529e1472dfd485cfe3c7.ttf",
     "static/media/PlusJakartaSans-Medium.ttf": "/project-qclay-aI/static/media/PlusJakartaSans-Medium.b1ea1e4a874b401f584a.ttf",
     "static/media/PlusJakartaSans-Regular.ttf": "/project-qclay-aI/static/media/PlusJakartaSans-Regular.e959ca27c856c771bc26.ttf",
-    "static/media/background-1.png": "/project-qclay-aI/static/media/background-1.0254c5b382ebe3974cf9.png",
     "static/media/NeueMachina-Regular.ttf": "/project-qclay-aI/static/media/NeueMachina-Regular.3e80df68866b54fdec1d.ttf",
     "static/media/NeueMachina-Ultrabold.ttf": "/project-qclay-aI/static/media/NeueMachina-Ultrabold.d1877796f7b16cfd54ba.ttf",
     "static/media/PowerGrotesk-UltraBold.ttf": "/project-qclay-aI/static/media/PowerGrotesk-UltraBold.3487eaf6b13d36ed5678.ttf",
     "static/media/PowerGrotesk-Regular.ttf": "/project-qclay-aI/static/media/PowerGrotesk-Regular.b052d3329dc6f87ae610.ttf",
     "static/media/image-hand.png": "/project-qclay-aI/static/media/image-hand.cb32f8d5937a3b89be55.png",
+    "static/media/background-mobile.jpg": "/project-qclay-aI/static/media/background-mobile.176ad61117cf5531d07b.jpg",
     "static/media/background-3-mobile.png": "/project-qclay-aI/static/media/background-3-mobile.5b8585a117cfc9a2f74a.png",
     "static/media/SulphurPoint-Bold.ttf": "/project-qclay-aI/static/media/SulphurPoint-Bold.19bcd44ee40e6d7f4aad.ttf",
+    "static/media/background-4-mobile.png": "/project-qclay-aI/static/media/background-4-mobile.8c4d09a67e50603d5661.png",
     "static/media/Genius.ttf": "/project-qclay-aI/static/media/Genius.f837457156a8ad19ea34.ttf",
     "static/media/background-1-mobile.png": "/project-qclay-aI/static/media/background-1-mobile.cf5c64fb532c16a34e0c.png",
     "static/media/ClashDisplay-Regular.ttf": "/project-qclay-aI/static/media/ClashDisplay-Regular.511c364ea4704a6df142.ttf",
@@ -36,11 +39,11 @@
     "static/media/line.png": "/project-qclay-aI/static/media/line.3e406dbc045aca61e45b.png",
     "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.54dbbe1e.css.map": "/project-qclay-aI/static/css/main.54dbbe1e.css.map",
-    "main.1b111eb1.js.map": "/project-qclay-aI/static/js/main.1b111eb1.js.map"
+    "main.71d22be8.css.map": "/project-qclay-aI/static/css/main.71d22be8.css.map",
+    "main.bd4654f9.js.map": "/project-qclay-aI/static/js/main.bd4654f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.54dbbe1e.css",
-    "static/js/main.1b111eb1.js"
+    "static/css/main.71d22be8.css",
+    "static/js/main.bd4654f9.js"
   ]
 }
