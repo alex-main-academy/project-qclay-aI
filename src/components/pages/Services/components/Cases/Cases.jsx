@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import css from './Cases.module.scss';
 import sprite from '../../images/sprite.svg';
@@ -89,7 +88,15 @@ const Cases = () => {
             <h3 className={css.cases__subtitle}>
               Our Pricing Lorem ipsum dolor sit amet consec tetur.
             </h3>
-            <Link className={css.cases__link}>New Case</Link>
+            <motion.a
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.cases__link}
+            >
+              <span className={css.white__span}>New Case</span>
+              <span className={css.black__span}>New Case</span>
+            </motion.a>
           </motion.li>
           <motion.li
             initial="hidden"
@@ -103,7 +110,15 @@ const Cases = () => {
             <h3 className={css.cases__subtitle}>
               Our Pricing Lorem ipsum dolor sit amet consec tetur.
             </h3>
-            <Link className={css.cases__link}>New Case</Link>
+            <motion.a
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.cases__link}
+            >
+              <span className={css.green__span}>New Case</span>
+              <span className={css.white__span}>New Case</span>
+            </motion.a>
           </motion.li>
           <motion.li
             initial="hidden"
@@ -117,7 +132,15 @@ const Cases = () => {
             <h3 className={css.cases__subtitle}>
               Our Pricing Lorem ipsum dolor sit amet consec tetur.
             </h3>
-            <Link className={css.cases__link}>New Case</Link>
+            <motion.a
+              initial="initial"
+              whileHover="hover"
+              variants={hoverEffectAnimation}
+              className={css.cases__link}
+            >
+              <span className={css.green__span}>New Case</span>
+              <span className={css.white__span}>New Case</span>
+            </motion.a>
           </motion.li>
           <motion.li
             initial="hidden"
