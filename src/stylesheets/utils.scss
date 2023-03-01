@@ -178,15 +178,3 @@ p {
     overflow: hidden;
     height: 100vh;
 }
-
-.hero__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    @media screen and (max-width:1320px) {
-        width: auto;
-        height: 100%;
-    }
-}

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Header from '../Header/Header';
 import css from './Hero.module.scss';
 import backVideo from '../../video/hero-back-video.mp4';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const textAnimation = {
   hidden: {
@@ -17,13 +17,15 @@ const textAnimation = {
 };
 
 const Hero = () => {
+  const videoRef = useRef(null);
+
   useEffect(() => {
-    document.querySelector('.hero__video').play();
+    videoRef.current.play();
   });
 
   return (
     <motion.section initial="hidden" whileInView="visible" className={css.hero}>
-      <video autoPlay="autoplay" muted loop className="hero__video">
+      <video ref={videoRef} muted loop className={css.hero__video}>
         <source src={backVideo} type="video/mp4" />
       </video>
       <Header />
