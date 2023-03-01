@@ -25,7 +25,8 @@
     "redux": "^4.2.1",
     "sass": "^1.58.1",
     "scroll-into-view-if-needed": "^3.0.6",
-    "scroll-to-element": "^2.0.3"
+    "scroll-to-element": "^2.0.3",
+    "video-react": "^0.16.0"
   },
   "scripts": {
     "start": "react-scripts start",
