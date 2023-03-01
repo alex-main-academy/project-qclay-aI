@@ -22,7 +22,7 @@ const Hero = () => {
         autoPlay="autoplay"
         muted
         loop
-        playsinline
+        playsInline
         className={css.hero__video}
       >
         <source src={backVideo} type="video/mp4" />
