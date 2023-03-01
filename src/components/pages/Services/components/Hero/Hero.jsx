@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <motion.section initial="hidden" whileInView="visible" className={css.hero}>
-      <video muted loop playsInline className="hero__video">
+      <video autoPlay muted loop playsInline className="hero__video">
         <source src={backVideo} type="video/mp4" />
       </video>
       <Header />
