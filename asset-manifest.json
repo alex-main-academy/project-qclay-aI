@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.71d22be8.css",
-    "main.js": "/project-qclay-aI/static/js/main.bd4654f9.js",
+    "main.css": "/project-qclay-aI/static/css/main.8265bef9.css",
+    "main.js": "/project-qclay-aI/static/js/main.f150136f.js",
     "static/media/hero-back-video.mp4": "/project-qclay-aI/static/media/hero-back-video.913a91150da70c1b9da0.mp4",
     "static/media/laptop.mp4": "/project-qclay-aI/static/media/laptop.423169ee7d5f3832489c.mp4",
     "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.539e85ad774a5b8bee62.mp4",
@@ -39,11 +39,11 @@
     "static/media/line.png": "/project-qclay-aI/static/media/line.3e406dbc045aca61e45b.png",
     "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.71d22be8.css.map": "/project-qclay-aI/static/css/main.71d22be8.css.map",
-    "main.bd4654f9.js.map": "/project-qclay-aI/static/js/main.bd4654f9.js.map"
+    "main.8265bef9.css.map": "/project-qclay-aI/static/css/main.8265bef9.css.map",
+    "main.f150136f.js.map": "/project-qclay-aI/static/js/main.f150136f.js.map"
   },
   "entrypoints": [
-    "static/css/main.71d22be8.css",
-    "static/js/main.bd4654f9.js"
+    "static/css/main.8265bef9.css",
+    "static/js/main.f150136f.js"
   ]
 }
