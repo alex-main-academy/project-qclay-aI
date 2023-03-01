@@ -30,13 +30,19 @@ const Header = () => {
               <>
                 <ul className={css.navigation}>
                   <li className={css.navigation__item}>
-                    <Link className={css.navigation__link}>Services</Link>
+                    <Link to="/" className={css.navigation__link}>
+                      Services
+                    </Link>
                   </li>
                   <li className={css.navigation__item}>
-                    <Link className={css.navigation__link}>Cases</Link>
+                    <Link to="/cases" className={css.navigation__link}>
+                      Cases
+                    </Link>
                   </li>
                   <li className={css.navigation__item}>
-                    <Link className={css.navigation__link}>About</Link>
+                    <Link to="/blog" className={css.navigation__link}>
+                      About
+                    </Link>
                   </li>
                   <li className={css.navigation__item}>
                     <Link className={css.navigation__link}>Contacts</Link>

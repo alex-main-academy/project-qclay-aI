@@ -1,0 +1,83 @@
+.hero {
+    padding-bottom: 84px;
+    background-image: linear-gradient(to right, rgba(36, 188, 145, 0.5), rgba(36, 188, 145, 0.5)), url(../../images/blogHero/background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width:767px) {
+        background-image: linear-gradient(to right, rgba(36, 188, 145, 0.5), rgba(36, 188, 145, 0.5)), url(../../images/blogHero/background-mobile.jpg);
+        padding-bottom: 54px;
+    }
+}
+
+.hero__title {
+    max-width: 1113px;
+    margin: 134px 0 25px 0;
+
+    font-size: 80px;
+    line-height: 0.88;
+    text-transform: uppercase;
+    color: var(--black-text-color);
+
+    @media screen and (max-width:1123px) {
+        font-size: 65px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        line-height: 0.8;
+        max-width: 360px;
+        margin: 139px 0 28px 0;
+    }
+}
+
+.hero__border {
+    border-top: 3px dashed rgba(0, 0, 0, 0.5);
+    margin-bottom: 228px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 326.5px;
+    }
+}
+
+.hero__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 142px;
+}
+
+.hero__list {
+    display: flex;
+    gap: 70px;
+
+    @media screen and (max-width:1480px) {
+        gap: 25px;
+    }
+}
+
+.hero__link {
+    font-family: 'Plus Jakarta Display';
+    font-size: 22px;
+    line-height: 1.27;
+    text-transform: capitalize;
+    color: var(--black-text-color);
+}
+
+.hero__text {
+    max-width: 475px;
+    font-size: 20px;
+    text-align: right;
+    text-transform: capitalize;
+    color: var(--black-text-color);
+
+    @media screen and (max-width:1123px) {
+        margin-left: auto;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        line-height: 1.27;
+        max-width: 180px;
+    }
+}

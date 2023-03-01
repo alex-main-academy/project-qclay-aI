@@ -144,8 +144,7 @@
     text-align: left;
     background-color: transparent;
     height: 100%;
-
-    transition-duration: 750ms;
+    transition-duration: 600ms;
 
     display: flex;
     flex-direction: column;
@@ -268,11 +267,12 @@
 }
 
 .process__about {
-    transition-duration: 750ms;
+    transition-duration: 600ms;
+    transition-property: font-size opacity;
     line-height: 1.15;
     color: var(--white-text-color);
 
-    font-size: 0;
+    font-size: 10px;
     opacity: 0;
 
     @media screen and (max-width:1123px) {

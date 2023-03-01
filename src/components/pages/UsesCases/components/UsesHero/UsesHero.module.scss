@@ -1,0 +1,64 @@
+.hero {
+    background-image: url(../../images/usesHero/background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-bottom: 84px;
+
+    @media screen and (max-width:767px) {
+        padding-bottom: 54px;
+
+        background-image: linear-gradient(to right, rgba(36, 188, 145, 0.5), rgba(36, 188, 145, 0.5)), url(../../images/usesHero/background-mobile.jpg);
+    }
+}
+
+.hero__title {
+    max-width: 1113px;
+    margin: 119px 0 25px 0;
+
+    font-size: 80px;
+    line-height: 0.88;
+    text-transform: uppercase;
+    color: var(--black-text-color);
+
+    @media screen and (max-width:1123px) {
+        font-size: 65px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 50px;
+        line-height: 0.8;
+        max-width: 360px;
+        margin: 140px 0 28px 0;
+    }
+}
+
+.hero__border {
+    border-top: 3px dashed rgba(0, 0, 0, 0.5);
+    margin-bottom: 242px;
+
+    @media screen and (max-width:1123px) {
+        margin-bottom: 200px;
+    }
+
+    @media screen and (max-width:1123px) {
+        margin-bottom: 326.5px;
+    }
+}
+
+.hero__text {
+    max-width: 475px;
+    margin-left: auto;
+
+    font-size: 20px;
+    text-align: right;
+    text-transform: capitalize;
+
+    color: var(--black-text-color);
+
+    @media screen and (max-width:767px) {
+        font-size: 16px;
+        line-height: 1.27;
+        max-width: 180px;
+    }
+}

@@ -104,6 +104,7 @@ const Industry = () => {
                     width: '260px',
                     height: '580px',
                     marginLeft: '78px',
+                    transform: 'rotate(180deg)',
                   }}
                 />
                 <img
