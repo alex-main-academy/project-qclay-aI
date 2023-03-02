@@ -97,7 +97,8 @@
         padding: 0;
         position: relative;
 
-        .industry__button:focus {
+        .industry__button:focus,
+        .industry__button:hover {
             padding-bottom: 63.5px;
 
             .text__mobile {

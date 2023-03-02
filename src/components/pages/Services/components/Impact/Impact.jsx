@@ -3,30 +3,17 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import scrollToElement from 'scroll-to-element';
+import detect from 'detect.js';
 import Media from 'react-media';
 import css from './Impact.module.scss';
 import tennisVideo from '../../video/tennis.mp4';
 import tennisMobileVideo from '../../video/tennis-mob.mp4';
 
-const textAnimation = {
-  hidden: {
-    opacity: 1,
-    visibility: 'visible',
-  },
-  visible: {
-    opacity: 0,
-    visibility: 'hidden',
-    transition: {
-      delay: document.body.clientWidth > 767 ? 1.4 : 2.4,
-      duration: 0.5,
-    },
-  },
-};
-
 const Impact = () => {
   const isVisibleSelector = useSelector(state => state.isElementVisible);
   const [isRender, setIsRender] = useState(false);
   const [screen, setScreen] = useState(null);
+  const [browser] = useState(detect.parse(navigator.userAgent));
   const { ref, inView } = useInView({
     root: null,
     threshold: 0.01,
@@ -39,6 +26,7 @@ const Impact = () => {
         top: 80,
         plusTop: 250,
         secondTimer: 4000,
+        delay: 1.4,
       });
     } else if (
       document.body.clientWidth < 1123 &&
@@ -48,15 +36,17 @@ const Impact = () => {
         top: 0,
         plusTop: 0,
         secondTimer: 4000,
+        delay: 1.4,
       });
     } else if (document.body.clientWidth < 767) {
       setScreen({
-        top: 20,
+        top: 0,
         plusTop: 200,
-        secondTimer: 4500,
+        secondTimer: browser.browser.family === 'Chrome Mobile' ? 4500 : 7000,
+        delay: browser.browser.family === 'Chrome Mobile' ? 2.6 : 3.8,
       });
     }
-  }, []);
+  }, [browser.browser.family]);
 
   useEffect(() => {
     const sectionElement = document.querySelector('.impact');
@@ -79,6 +69,21 @@ const Impact = () => {
       setIsRender(false);
     }
   }, [inView, isVisibleSelector, screen]);
+
+  const textAnimation = {
+    hidden: {
+      opacity: 1,
+      visibility: 'visible',
+    },
+    visible: {
+      opacity: 0,
+      visibility: 'hidden',
+      transition: {
+        delay: screen?.delay || 1.4,
+        duration: 1,
+      },
+    },
+  };
 
   return (
     <section ref={ref} className="impact">
@@ -116,7 +121,13 @@ const Impact = () => {
                 className={css.impact__border}
               ></motion.div>
               {isRender && (
-                <video autoPlay muted loop className={css.impact__video}>
+                <video
+                  playsInline
+                  webkit-playsInline
+                  muted
+                  autoPlay
+                  className={css.impact__video}
+                >
                   <source src={tennisMobileVideo} />
                 </video>
               )}

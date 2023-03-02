@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import Header from '../Header/Header';
 import css from './Hero.module.scss';
 import backVideo from '../../video/hero-back-video.mp4';
-import { useEffect } from 'react';
 
 const textAnimation = {
   hidden: {
@@ -17,17 +16,13 @@ const textAnimation = {
 };
 
 const Hero = () => {
-  useEffect(() => {
-    document.querySelector('.hero__video').play();
-  }, []);
-
   return (
     <motion.section initial="hidden" whileInView="visible" className={css.hero}>
       <div
         dangerouslySetInnerHTML={{
-          __html: `<video autoplay muted loop playsinline class="hero__video">
-          <source src=${backVideo} type="video/mp4" />
-          </video>`,
+          __html: `<video playsinline webkit-playsinline autoplay muted loop class="hero__video">
+        <source src=${backVideo} type="video/mp4" />
+        </video>`,
         }}
       />
       <Header />
