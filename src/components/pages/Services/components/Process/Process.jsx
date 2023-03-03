@@ -1,10 +1,6 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Link } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
-import { useDispatch } from 'react-redux';
-import { changeState } from 'redux/store';
 import css from './Process.module.scss';
 import sprite from '../../images/sprite.svg';
 import circleLottie from '../../lotties/loop_elipsses_ai.json';
@@ -21,20 +17,8 @@ const hoverEffectAnimation = {
 };
 
 const Process = () => {
-  const dispatch = useDispatch();
-  const { ref, inView } = useInView({
-    root: null,
-    threshold: 0.2,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      dispatch(changeState(true));
-    }
-  }, [inView, dispatch]);
-
   return (
-    <section ref={ref} className={css.process}>
+    <section className={css.process}>
       <div className="container">
         <p className={css.process__uptitle}>About us</p>
         <h2 className={css.process__title}>

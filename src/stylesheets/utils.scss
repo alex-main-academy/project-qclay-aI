@@ -151,33 +151,6 @@ p {
     }
 }
 
-// impact global styles
-.impact {
-    padding: 130px 0 224px 0;
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-
-    @media screen and (max-width:1480px) {
-        height: auto;
-    }
-
-    @media screen and (max-width:1123px) {
-        padding: 100px 0 100px 0;
-    }
-
-    @media screen and (max-width:767px) {
-        padding: 63px 0 70px 0;
-        background-position: center;
-    }
-}
-
-// ball global styles
-.ball {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-}
 
 .hero__video {
     position: absolute;
@@ -188,40 +161,5 @@ p {
     @media screen and (max-width:1320px) {
         width: auto;
         height: 100%;
-    }
-}
-
-
-// impact video
-.impact__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-
-    @media screen and (max-width:767px) {
-        top: -20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-        height: auto;
-        width: 100%;
-    }
-
-    @media screen and (max-width:630px) {
-        top: -10%;
-        left: 50%;
-        transform: translate(-50%, -10%);
-    }
-
-    @media screen and (max-width:530px) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    @media screen and (max-width:430px) {
-        height: 100%;
-        width: auto;
     }
 }
