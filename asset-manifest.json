@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/project-qclay-aI/static/css/main.7df484c7.css",
-    "main.js": "/project-qclay-aI/static/js/main.a8c4ee6a.js",
+    "main.css": "/project-qclay-aI/static/css/main.4abbaf7b.css",
+    "main.js": "/project-qclay-aI/static/js/main.7d2e1887.js",
     "static/media/hero-back-video.mp4": "/project-qclay-aI/static/media/hero-back-video.913a91150da70c1b9da0.mp4",
+    "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.8529b0a47a27c99454e7.mp4",
     "static/media/laptop.mp4": "/project-qclay-aI/static/media/laptop.423169ee7d5f3832489c.mp4",
-    "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.539e85ad774a5b8bee62.mp4",
-    "static/media/tennis-mob.mp4": "/project-qclay-aI/static/media/tennis-mob.45e67ac4153611324a99.mp4",
+    "static/media/tennis-mob.mp4": "/project-qclay-aI/static/media/tennis-mob.3b03bb809b981c96ce4f.mp4",
     "static/media/background-2.png": "/project-qclay-aI/static/media/background-2.93b0717b6975eef785b8.png",
     "static/media/background-4.png": "/project-qclay-aI/static/media/background-4.1b8325f8d0c045094efd.png",
     "static/media/background-3.png": "/project-qclay-aI/static/media/background-3.70c70cb72234379eb908.png",
@@ -40,11 +40,11 @@
     "static/media/line.png": "/project-qclay-aI/static/media/line.3e406dbc045aca61e45b.png",
     "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "index.html": "/project-qclay-aI/index.html",
-    "main.7df484c7.css.map": "/project-qclay-aI/static/css/main.7df484c7.css.map",
-    "main.a8c4ee6a.js.map": "/project-qclay-aI/static/js/main.a8c4ee6a.js.map"
+    "main.4abbaf7b.css.map": "/project-qclay-aI/static/css/main.4abbaf7b.css.map",
+    "main.7d2e1887.js.map": "/project-qclay-aI/static/js/main.7d2e1887.js.map"
   },
   "entrypoints": [
-    "static/css/main.7df484c7.css",
-    "static/js/main.a8c4ee6a.js"
+    "static/css/main.4abbaf7b.css",
+    "static/js/main.7d2e1887.js"
   ]
 }
