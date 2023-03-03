@@ -177,6 +177,10 @@
             margin-top: 0;
         }
     }
+
+    @media screen and (max-width:360px) {
+        max-width: 260px;
+    }
 }
 
 @media screen and (max-width:767px) {

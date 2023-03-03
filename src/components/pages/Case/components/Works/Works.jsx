@@ -82,6 +82,142 @@ const Works = () => {
               </div>
             </div>
           </li>
+          <li className={css.works__item}>
+            <h3 className={css.works__subtitle}>
+              <span className={css.works__span}>CONVERTING</span> DETAILED
+              <br />
+              PRODUCT INFORMATION
+              <span className={css.works__icon}>
+                <img src={trueArrowIcon} alt="icon" />
+              </span>
+            </h3>
+            <div className={css.works__content}>
+              <img src={blockImage} alt="block" className={css.works__image} />
+              <div>
+                <p className={css.works__text}>
+                  Lorem ipsum dolor sit amet consectetur. Eu elit ut leo dui
+                  dolor in. Nullam neque a arcu nibh mattis lacus sem
+                  scelerisque. Tincidunt quam semper semper ipsum. Sed gravida
+                  neque faucibus semper convallis consequat luctus. Pellentesque
+                  et dolor amet sed iaculis eu vitae vitae diam. Convallis
+                  posuere montes mauris porta etiam rhoncus. Fermentum eget nec
+                  faucibus quam tincidunt eu maecenas. Lorem ipsum dolor sit
+                  amet consectetur.
+                </p>
+                <p className={css.works__text}>
+                  Eu elit ut leo dui dolor in. Nullam neque a arcu nibh mattis
+                  lacus sem scelerisque. Tincidunt quam semper semper ipsum. Sed
+                  gravida neque faucibus semper convallis consequat luctus.
+                  Pellentesque et dolor amet sed iaculis eu vitae vitae diam.
+                  Convallis posuere montes mauris porta etiam rhoncus. Fermentum
+                  eget nec faucibus quam tincidunt eu maecenas. Fermentum eget
+                  nec faucibus quam tincidunt eu maecenas.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className={css.works__item}>
+            <h3 className={css.works__subtitle}>
+              HOW THE
+              <span className={css.works__span}>
+                {' '}
+                PRODUCT <br /> NAME IS FORMED
+              </span>
+              <span className={css.works__icon}>
+                <img src={trueArrowIcon} alt="icon" />
+              </span>
+            </h3>
+            <div className={css.works__content}>
+              <img src={blockImage} alt="block" className={css.works__image} />
+              <div>
+                <p className={css.works__text}>
+                  Lorem ipsum dolor sit amet consectetur. Eu elit ut leo dui
+                  dolor in. Nullam neque a arcu nibh mattis lacus sem
+                  scelerisque. Tincidunt quam semper semper ipsum. Sed gravida
+                  neque faucibus semper convallis consequat luctus. Pellentesque
+                  et dolor amet sed iaculis eu vitae vitae diam. Convallis
+                  posuere montes mauris porta etiam rhoncus. Fermentum eget nec
+                  faucibus quam tincidunt eu maecenas. Lorem ipsum dolor sit
+                  amet consectetur.
+                </p>
+                <p className={css.works__text}>
+                  Eu elit ut leo dui dolor in. Nullam neque a arcu nibh mattis
+                  lacus sem scelerisque. Tincidunt quam semper semper ipsum. Sed
+                  gravida neque faucibus semper convallis consequat luctus.
+                  Pellentesque et dolor amet sed iaculis eu vitae vitae diam.
+                  Convallis posuere montes mauris porta etiam rhoncus. Fermentum
+                  eget nec faucibus quam tincidunt eu maecenas. Fermentum eget
+                  nec faucibus quam tincidunt eu maecenas.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className={css.works__item}>
+            <h3 className={css.works__subtitle}>
+              <span className={css.works__span}>MANUAL</span> CONTENT <br />
+              MODERATION
+              <span className={css.works__icon}>
+                <img src={trueArrowIcon} alt="icon" />
+              </span>
+            </h3>
+            <div className={css.works__content}>
+              <img src={blockImage} alt="block" className={css.works__image} />
+              <div>
+                <p className={css.works__text}>
+                  Lorem ipsum dolor sit amet consectetur. Eu elit ut leo dui
+                  dolor in. Nullam neque a arcu nibh mattis lacus sem
+                  scelerisque. Tincidunt quam semper semper ipsum. Sed gravida
+                  neque faucibus semper convallis consequat luctus. Pellentesque
+                  et dolor amet sed iaculis eu vitae vitae diam. Convallis
+                  posuere montes mauris porta etiam rhoncus. Fermentum eget nec
+                  faucibus quam tincidunt eu maecenas. Lorem ipsum dolor sit
+                  amet consectetur.
+                </p>
+                <p className={css.works__text}>
+                  Eu elit ut leo dui dolor in. Nullam neque a arcu nibh mattis
+                  lacus sem scelerisque. Tincidunt quam semper semper ipsum. Sed
+                  gravida neque faucibus semper convallis consequat luctus.
+                  Pellentesque et dolor amet sed iaculis eu vitae vitae diam.
+                  Convallis posuere montes mauris porta etiam rhoncus. Fermentum
+                  eget nec faucibus quam tincidunt eu maecenas. Fermentum eget
+                  nec faucibus quam tincidunt eu maecenas.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className={css.works__item}>
+            <h3 className={css.works__subtitle}>
+              <span className={css.works__span}>POSTING </span>AND UPDATING
+              <br /> PRODUCTS
+              <span className={css.works__icon}>
+                <img src={trueArrowIcon} alt="icon" />
+              </span>
+            </h3>
+            <div className={css.works__content}>
+              <img src={blockImage} alt="block" className={css.works__image} />
+              <div>
+                <p className={css.works__text}>
+                  Lorem ipsum dolor sit amet consectetur. Eu elit ut leo dui
+                  dolor in. Nullam neque a arcu nibh mattis lacus sem
+                  scelerisque. Tincidunt quam semper semper ipsum. Sed gravida
+                  neque faucibus semper convallis consequat luctus. Pellentesque
+                  et dolor amet sed iaculis eu vitae vitae diam. Convallis
+                  posuere montes mauris porta etiam rhoncus. Fermentum eget nec
+                  faucibus quam tincidunt eu maecenas. Lorem ipsum dolor sit
+                  amet consectetur.
+                </p>
+                <p className={css.works__text}>
+                  Eu elit ut leo dui dolor in. Nullam neque a arcu nibh mattis
+                  lacus sem scelerisque. Tincidunt quam semper semper ipsum. Sed
+                  gravida neque faucibus semper convallis consequat luctus.
+                  Pellentesque et dolor amet sed iaculis eu vitae vitae diam.
+                  Convallis posuere montes mauris porta etiam rhoncus. Fermentum
+                  eget nec faucibus quam tincidunt eu maecenas. Fermentum eget
+                  nec faucibus quam tincidunt eu maecenas.
+                </p>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
