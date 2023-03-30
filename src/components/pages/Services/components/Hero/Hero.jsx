@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Header from '../Header/Header';
 import css from './Hero.module.scss';
-import backVideo from '../../video/hero-back-video.mp4';
+import backVideo from '../../video/hero-back-video.webm';
 
 const textAnimation = {
   hidden: {
