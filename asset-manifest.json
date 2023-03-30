@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/project-qclay-aI/static/css/main.5fa0fa60.css",
-    "main.js": "/project-qclay-aI/static/js/main.7d6fd434.js",
+    "main.js": "/project-qclay-aI/static/js/main.d29212a0.js",
     "static/media/laptop.mp4": "/project-qclay-aI/static/media/laptop.423169ee7d5f3832489c.mp4",
-    "static/media/hero-back-video.mp4": "/project-qclay-aI/static/media/hero-back-video.bb1e915a4e9cbffbf57b.mp4",
     "static/media/tennis.mp4": "/project-qclay-aI/static/media/tennis.e15a15cdb203612aa855.mp4",
     "static/media/background-2.png": "/project-qclay-aI/static/media/background-2.93b0717b6975eef785b8.png",
     "static/media/tennis-mob.mp4": "/project-qclay-aI/static/media/tennis-mob.03879b8a483f663ffb38.mp4",
@@ -14,6 +13,7 @@
     "static/media/girl.png": "/project-qclay-aI/static/media/girl.085fb588b254d14c7ddb.png",
     "static/media/Robtronika-Regular.ttf": "/project-qclay-aI/static/media/Robtronika-Regular.3a5bff6562eea11669e5.ttf",
     "static/media/background-1.png": "/project-qclay-aI/static/media/background-1.0254c5b382ebe3974cf9.png",
+    "static/media/hero-back-video.webm": "/project-qclay-aI/static/media/hero-back-video.05f5ca718351eb94ebda.webm",
     "static/media/background.png": "/project-qclay-aI/static/media/background.bd6c132c14ee1429c5de.png",
     "static/media/WhyteInktrap-Medium.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Medium.f23655ec1c93691ae10c.ttf",
     "static/media/WhyteInktrap-Book.ttf": "/project-qclay-aI/static/media/WhyteInktrap-Book.529e1472dfd485cfe3c7.ttf",
@@ -43,10 +43,10 @@
     "static/media/sprite.svg": "/project-qclay-aI/static/media/sprite.a718f1bff843a28f58c7d290b2c2b356.svg",
     "index.html": "/project-qclay-aI/index.html",
     "main.5fa0fa60.css.map": "/project-qclay-aI/static/css/main.5fa0fa60.css.map",
-    "main.7d6fd434.js.map": "/project-qclay-aI/static/js/main.7d6fd434.js.map"
+    "main.d29212a0.js.map": "/project-qclay-aI/static/js/main.d29212a0.js.map"
   },
   "entrypoints": [
     "static/css/main.5fa0fa60.css",
-    "static/js/main.7d6fd434.js"
+    "static/js/main.d29212a0.js"
   ]
 }
